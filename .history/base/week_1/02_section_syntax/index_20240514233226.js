@@ -12,4 +12,4 @@ let myFavoriteAnimal = 'Gav'
 let myFavoriteProgrammingLanguage = 'Ноты'
 
 const userInfo = [ myName, mySurname, myFavoriteDrink, myFavoriteAnimal, myFavoriteProgrammingLanguage ]
-userInfo.forEach((elem) => console.log(elem))
+userInfo.fo((elem) => console.log(elem))
