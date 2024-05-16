@@ -35,12 +35,10 @@ alert(`Вас зовут ${userName} и вам ${userAge} лет`)
 // new solution 
 const userString = prompt('Введите текст для обрезки').trim()
 const startSliceIndex = Number(prompt('Введите индекс, с которого нужно начать обрезку строки'))
-const endSliceIndex = Number(prompt('Введите индекс, которым нужно закончить обрезку строки'))
+const endSliceIndex = prompt('Введите индекс, которым нужно закончить обрезку строки')
 const resStr = userString.slice(startSliceIndex, endSliceIndex)
 alert(`Результат: ${resStr}`)
-
 // old solution 
-
 // const userString = prompt('Введите текст для обрезки').trim()
 
 // const reg = /\s*,\s*/

@@ -40,7 +40,6 @@ const resStr = userString.slice(startSliceIndex, endSliceIndex)
 alert(`Результат: ${resStr}`)
 
 // old solution 
-
 // const userString = prompt('Введите текст для обрезки').trim()
 
 // const reg = /\s*,\s*/

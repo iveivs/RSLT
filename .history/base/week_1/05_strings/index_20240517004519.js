@@ -38,9 +38,7 @@ const startSliceIndex = Number(prompt('Введите индекс, с кото�
 const endSliceIndex = Number(prompt('Введите индекс, которым нужно закончить обрезку строки'))
 const resStr = userString.slice(startSliceIndex, endSliceIndex)
 alert(`Результат: ${resStr}`)
-
 // old solution 
-
 // const userString = prompt('Введите текст для обрезки').trim()
 
 // const reg = /\s*,\s*/
