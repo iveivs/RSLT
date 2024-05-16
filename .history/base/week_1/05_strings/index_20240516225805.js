@@ -1,0 +1,74 @@
+// Задание #1
+const myName = 'Svetoslav'
+const programmingLanguage = 'JavaScript'
+const courseCreatorName = 'Владилен'
+const reasonText = 'хочу сменить вид деятельности'
+const numberOfMonth = 9
+
+const resultString = `Всем привет! Меня зовут ${myName}. 
+    Сейчас я изучаю язык программирования ${programmingLanguage} на курсе по ${programmingLanguage} у ${courseCreatorName}. 
+    Я хочу стать веб-разработчиком, потому что ${reasonText}. 
+    До этого я изучал ${programmingLanguage} ${numberOfMonth} месяцев. 
+    Я уверен, что пройду данный курс до конца!`
+// console.log(resultString);
+
+// Задание #2
+
+let myInfoText = resultString.replaceAll("JavaScript", "javascript").replaceAll("курс", "КУРС")
+console.log(myInfoText);
+console.log(myInfoText.length);
+console.log('первый символ:', myInfoText[0], myInfoText[myInfoText.length - 1]);
+
+// Задание #3
+
+const userName = prompt('Как вас зовут?').toLocaleLowerCase().trim();
+alert(`Вас зовут: ${userName}`)
+
+// Задание #4
+
+const userAge = Number(prompt('Сколько вам лет?').trim())
+console.log(userAge);
+
+alert(`Вас зовут ${userName} и вам ${userAge} лет`)
+
+// Задание #5
+// new solution 
+const userString = prompt('Введите текст для обрезки').trim()
+const startSliceIndex = prompt('Введите индекс, с которого нужно начать обрезку строки')
+const endSliceIndex = prompt('Введите индекс, которым нужно закончить обрезку строки')
+
+
+// old solution 
+// const userString = prompt('Введите текст для обрезки').trim()
+
+// const reg = /\s*,\s*/
+
+// const userCutParamsArr = prompt('Введите ЧЕРЕЗ ЗАПЯТУЮ индексы, начала и конца обрезки строки').split(reg)
+
+// if (userCutParamsArr.length === 2 && +userCutParamsArr[0] < +userCutParamsArr[1] && +userCutParamsArr[0] <= userString.length - 1) {
+//     let resString = userString.slice(userCutParamsArr[0], userCutParamsArr[1])
+//     alert(`Результат: ${resString}`)
+// } else {
+//     alert('Вы ввели некорректные данные')
+// }
+
+
+
+// Задание #6
+
+const userText = prompt("Введите текст").trim()
+
+const wordFromText = prompt("Введите слово из текста").trim()
+
+const indexOfWord = userText.indexOf(wordFromText)
+
+const cutedStr = userText.slice(0, indexOfWord)
+
+alert(`Результат: ${cutedStr}`)
+
+
+
+
+
+
+
