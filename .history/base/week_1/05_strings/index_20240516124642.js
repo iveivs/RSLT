@@ -56,7 +56,7 @@ const indexOfWord = userText.indexOf(wordFromText)
 
 const cutedStr = userText.slice(0, indexOfWord)
 
-alert(`Результат: ${cutedStr}`)
+alert(`Результат:    ${cutedStr}`)
 
 
 

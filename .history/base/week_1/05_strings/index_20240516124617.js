@@ -1,4 +1,3 @@
-// Задание #1
 const myName = 'Svetoslav'
 const programmingLanguage = 'JavaScript'
 const courseCreatorName = 'Владилен'
@@ -21,15 +20,15 @@ console.log('первый символ:', myInfoText[0], myInfoText[myInfoText.l
 
 // Задание #3
 
-const userName = prompt('Как вас зовут?').toLocaleLowerCase().trim();
-alert(`Вас зовут: ${userName}`)
+// const userName = prompt('Как вас зовут?').toLocaleLowerCase().trim();
+// alert(`Вас зовут: ${userName}`)
 
 // Задание #4
 
-const userAge = Number(prompt('Сколько вам лет?').trim())
-console.log(userAge);
+// const userAge = Number(prompt('Сколько вам лет?').trim())
+// console.log(userAge);
 
-alert(`Вас зовут ${userName} и вам ${userAge} лет`)
+// alert(`Вас зовут ${userName} и вам ${userAge} лет`)
 
 // Задание #5
 
@@ -56,7 +55,7 @@ const indexOfWord = userText.indexOf(wordFromText)
 
 const cutedStr = userText.slice(0, indexOfWord)
 
-alert(`Результат: ${cutedStr}`)
+alert(`Результат:    ${cutedStr}`)
 
 
 

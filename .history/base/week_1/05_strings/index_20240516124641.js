@@ -1,4 +1,4 @@
-// Задание #1
+// Задание #2
 const myName = 'Svetoslav'
 const programmingLanguage = 'JavaScript'
 const courseCreatorName = 'Владилен'
@@ -56,7 +56,7 @@ const indexOfWord = userText.indexOf(wordFromText)
 
 const cutedStr = userText.slice(0, indexOfWord)
 
-alert(`Результат: ${cutedStr}`)
+alert(`Результат:    ${cutedStr}`)
 
 
 

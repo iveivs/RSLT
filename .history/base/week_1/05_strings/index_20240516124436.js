@@ -1,4 +1,3 @@
-// Задание #1
 const myName = 'Svetoslav'
 const programmingLanguage = 'JavaScript'
 const courseCreatorName = 'Владилен'
@@ -21,30 +20,30 @@ console.log('первый символ:', myInfoText[0], myInfoText[myInfoText.l
 
 // Задание #3
 
-const userName = prompt('Как вас зовут?').toLocaleLowerCase().trim();
-alert(`Вас зовут: ${userName}`)
+// const userName = prompt('Как вас зовут?').toLocaleLowerCase().trim();
+// alert(`Вас зовут: ${userName}`)
 
 // Задание #4
 
-const userAge = Number(prompt('Сколько вам лет?').trim())
-console.log(userAge);
+// const userAge = Number(prompt('Сколько вам лет?').trim())
+// console.log(userAge);
 
-alert(`Вас зовут ${userName} и вам ${userAge} лет`)
+// alert(`Вас зовут ${userName} и вам ${userAge} лет`)
 
 // Задание #5
 
-const userString = prompt('Введите текст для обрезки').trim()
+// const userString = prompt('Введите текст для обрезки').trim()
 
-const reg = /\s*,\s*/
+// const reg = /\s*,\s*/
 
-const userCutParamsArr = prompt('Введите ЧЕРЕЗ ЗАПЯТУЮ индексы, начала и конца обрезки строки').split(reg)
+// const userCutParamsArr = prompt('Введите ЧЕРЕЗ ЗАПЯТУЮ индексы, начала и конца обрезки строки').split(reg)
 
-if (userCutParamsArr.length === 2 && +userCutParamsArr[0] < +userCutParamsArr[1] && +userCutParamsArr[0] <= userString.length - 1) {
-    let resString = userString.slice(userCutParamsArr[0], userCutParamsArr[1])
-    alert(`Результат: ${resString}`)
-} else {
-    alert('Вы ввели некорректные данные')
-}
+// if (userCutParamsArr.length === 2 && +userCutParamsArr[0] < +userCutParamsArr[1] && +userCutParamsArr[0] <= userString.length - 1) {
+//     let resString = userString.slice(userCutParamsArr[0], userCutParamsArr[1])
+//     alert(`Результат: ${resString}`)
+// } else {
+//     alert('Вы ввели некорректные данные')
+// }
 
 // Задание #6
 
@@ -56,7 +55,6 @@ const indexOfWord = userText.indexOf(wordFromText)
 
 const cutedStr = userText.slice(0, indexOfWord)
 
-alert(`Результат: ${cutedStr}`)
 
 
 
