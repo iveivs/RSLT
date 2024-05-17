@@ -4,5 +4,5 @@ const javaScriptDescription = 'JavaScript — мультипарадигменн
 const halfString = javaScriptDescription.slice(0, Math.floor((javaScriptDescription.length - 1) / 2))
 
 const replacedStr = halfString.replaceAll('а', 'А').replaceAll('a', 'A').replaceAll(' ', '').trim().repeat(3)
-console.log(replacedStr[Math.floor((javaScriptDescription.length - 1) / 2)]);
+console.log(replacedStr[replacedStr.length / 2]);
 console.log(replacedStr);
