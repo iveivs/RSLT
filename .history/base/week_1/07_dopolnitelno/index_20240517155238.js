@@ -1,12 +1,12 @@
 // Задание #1
 
-const javaScriptDescription = 'JavaScript — мультипарадигменный язык программирования. Поддерживает объектно-ориентированный, императивный и функциональный стили. Является реализацией спецификации ECMAScript. JavaScript обычно используется как встраиваемый язык для программного доступа к объектам приложений.'
+// const javaScriptDescription = 'JavaScript — мультипарадигменный язык программирования. Поддерживает объектно-ориентированный, императивный и функциональный стили. Является реализацией спецификации ECMAScript. JavaScript обычно используется как встраиваемый язык для программного доступа к объектам приложений.'
 
-const halfString = javaScriptDescription.slice(0, javaScriptDescription.length / 2)
+// const halfString = javaScriptDescription.slice(0, javaScriptDescription.length / 2)
 
-const replacedStr = halfString.replaceAll('а', 'А').replaceAll('a', 'A').replaceAll(' ', '').trim().repeat(3)
-console.log(replacedStr[replacedStr.length / 2]);
-console.log(replacedStr);
+// const replacedStr = halfString.replaceAll('а', 'А').replaceAll('a', 'A').replaceAll(' ', '').trim().repeat(3)
+// console.log(replacedStr[replacedStr.length / 2]);
+// console.log(replacedStr);
 
 // - - - - - - - - - -
 
@@ -35,7 +35,6 @@ if (Number.isNaN(Number(clientSpentToday)) || Number.isNaN(Number(clientSpentFor
 
     alert(`Спасибо, ${clientName}! К оплате ${clientSpentToday}$. За все время в нашем ресторане вы потратили ${clientSpentForAllTime}$.`)
 }
-
 // Задание #3
 
 let passWord = prompt('Введите пароль')
@@ -44,6 +43,8 @@ let hasDigit = false
 
 if (passWord.length > 3 && passWord.length <= 30) {
     for(let i = 0; i < passWord.length; i++) {
+        // console.log('i = ', passWord[i]);
+        
         if(!Number(isNaN(+passWord[i]))) {
             console.log('test1', passWord[i]);
             hasDigit = true

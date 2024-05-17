@@ -38,22 +38,5 @@ if (Number.isNaN(Number(clientSpentToday)) || Number.isNaN(Number(clientSpentFor
 
 // Задание #3
 
-let passWord = prompt('Введите пароль')
-let hasUpperLetter = false
-let hasDigit = false
 
-if (passWord.length > 3 && passWord.length <= 30) {
-    for(let i = 0; i < passWord.length; i++) {
-        if(!Number(isNaN(+passWord[i]))) {
-            console.log('test1', passWord[i]);
-            hasDigit = true
-            continue
-        }
-        if(passWord[i] === passWord[i].toUpperCase()) {
-            console.log('test2', passWord[i]);
-            hasUpperLetter = true
-        }
-    }
-}
 
-hasUpperLetter && hasDigit ? alert('Пароль валидный. Добро пожаловать в аккаунт!') : alert('Пароль не удовлетворяет условиям!')

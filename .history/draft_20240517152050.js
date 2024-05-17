@@ -5,5 +5,3 @@ if(5 < a < 10) {
     console.log('test 2');
 }
 
-console.log(10 || 20 || 30);
-

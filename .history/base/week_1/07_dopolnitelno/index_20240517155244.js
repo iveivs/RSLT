@@ -35,7 +35,6 @@ if (Number.isNaN(Number(clientSpentToday)) || Number.isNaN(Number(clientSpentFor
 
     alert(`Спасибо, ${clientName}! К оплате ${clientSpentToday}$. За все время в нашем ресторане вы потратили ${clientSpentForAllTime}$.`)
 }
-
 // Задание #3
 
 let passWord = prompt('Введите пароль')
@@ -44,6 +43,8 @@ let hasDigit = false
 
 if (passWord.length > 3 && passWord.length <= 30) {
     for(let i = 0; i < passWord.length; i++) {
+        // console.log('i = ', passWord[i]);
+        
         if(!Number(isNaN(+passWord[i]))) {
             console.log('test1', passWord[i]);
             hasDigit = true

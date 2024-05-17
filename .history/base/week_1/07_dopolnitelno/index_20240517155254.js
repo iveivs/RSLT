@@ -44,6 +44,7 @@ let hasDigit = false
 
 if (passWord.length > 3 && passWord.length <= 30) {
     for(let i = 0; i < passWord.length; i++) {
+        
         if(!Number(isNaN(+passWord[i]))) {
             console.log('test1', passWord[i]);
             hasDigit = true

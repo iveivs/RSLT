@@ -20,9 +20,9 @@ let discount = 0
 if (Number.isNaN(Number(clientSpentToday)) || Number.isNaN(Number(clientSpentForAllTime))) {
     alert('Сумма, которую клиент потратил за все время и которую потратил сегодня, должна быть числом! Перезагрузи страницу, чтобы повторить попытку.')
 } else {
-    if (100 <= clientSpentForAllTime && clientSpentForAllTime < 300) {
+    if (100 < clientSpentForAllTime  < 300) {
         discount = 10
-    } else if (300 <= clientSpentForAllTime && clientSpentForAllTime < 500) {
+    } else if (300 < clientSpentForAllTime < 500) {
         discount = 20
     } else if (clientSpentForAllTime > 500) {
         discount = 30
@@ -36,24 +36,5 @@ if (Number.isNaN(Number(clientSpentToday)) || Number.isNaN(Number(clientSpentFor
     alert(`Спасибо, ${clientName}! К оплате ${clientSpentToday}$. За все время в нашем ресторане вы потратили ${clientSpentForAllTime}$.`)
 }
 
-// Задание #3
 
-let passWord = prompt('Введите пароль')
-let hasUpperLetter = false
-let hasDigit = false
 
-if (passWord.length > 3 && passWord.length <= 30) {
-    for(let i = 0; i < passWord.length; i++) {
-        if(!Number(isNaN(+passWord[i]))) {
-            console.log('test1', passWord[i]);
-            hasDigit = true
-            continue
-        }
-        if(passWord[i] === passWord[i].toUpperCase()) {
-            console.log('test2', passWord[i]);
-            hasUpperLetter = true
-        }
-    }
-}
-
-hasUpperLetter && hasDigit ? alert('Пароль валидный. Добро пожаловать в аккаунт!') : alert('Пароль не удовлетворяет условиям!')
