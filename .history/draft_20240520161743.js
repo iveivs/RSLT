@@ -1,4 +1,4 @@
-// const temperatureInCelsius = Number(prompt('Введите температуру в градусах Цельсия'));
+]// const temperatureInCelsius = Number(prompt('Введите температуру в градусах Цельсия'));
 
 // if (temperatureInCelsius === 0) {
 //         console.log('typeof', ); 
