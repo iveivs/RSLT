@@ -14,7 +14,7 @@ console.log(getName2('test2'));
 console.log(getName3('test3'));
 
 // Задание #2
-// NEW
+
 function getSumOfNumbers(number, type) {
     let sum = 0
     if (isNaN(number) || arguments.length < 2) {
@@ -46,7 +46,6 @@ console.log(getSumOfNumbers(10, 'even'));
 console.log(getSumOfNumbers(10, 'odd'));
 console.log(getSumOfNumbers(10, ''));
 console.log(getSumOfNumbers());
-
 // old
 // function getSumOfNumbers(number, type) {
 //     let sum = 0

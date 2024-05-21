@@ -14,7 +14,6 @@
 
 // console.log(Number.isInteger(a));
 
-
 function getSumOfNumbers(number, type) {
     let sum = 0
     if (isNaN(number) || arguments.length < 2) {
@@ -25,16 +24,14 @@ function getSumOfNumbers(number, type) {
                 case 'odd':
                     if (i % 2 !== 0) {
                         sum += i
+                        break
                     }
-                    break
                 case 'even':
                     if (i % 2 === 0) {
                         sum += i
                     }
-                    break
                 case '':
                     sum += i
-                    break
             }
         }
     }

@@ -14,7 +14,6 @@
 
 // console.log(Number.isInteger(a));
 
-
 function getSumOfNumbers(number, type) {
     let sum = 0
     if (isNaN(number) || arguments.length < 2) {

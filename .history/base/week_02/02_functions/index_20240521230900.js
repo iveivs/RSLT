@@ -14,39 +14,35 @@ console.log(getName2('test2'));
 console.log(getName3('test3'));
 
 // Задание #2
-// NEW
+
 function getSumOfNumbers(number, type) {
     let sum = 0
     if (isNaN(number) || arguments.length < 2) {
         return NaN;
     } else {
-        for(let i = 0; i <= number; i++){
-            switch (type) {
-                case 'odd':
+        switch (type) {
+            case 'odd':
+                for (let i = 0; i <= number; i++) {
                     if (i % 2 !== 0) {
                         sum += i
                     }
-                    break
-                case 'even':
+                }
+                return sum
+            case 'even':
+                for (let i = 0; i <= number; i++) {
                     if (i % 2 === 0) {
                         sum += i
                     }
-                    break
-                case '':
+                }
+                return sum
+            case '':
+                for (let i = 0; i <= number; i++) {
                     sum += i
-                    break
-            }
+                }
+                return sum
         }
     }
-    return sum
 }
-
-
-console.log(getSumOfNumbers(10, 'even'));
-console.log(getSumOfNumbers(10, 'odd'));
-console.log(getSumOfNumbers(10, ''));
-console.log(getSumOfNumbers());
-
 // old
 // function getSumOfNumbers(number, type) {
 //     let sum = 0

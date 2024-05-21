@@ -14,7 +14,6 @@
 
 // console.log(Number.isInteger(a));
 
-
 function getSumOfNumbers(number, type) {
     let sum = 0
     if (isNaN(number) || arguments.length < 2) {
@@ -23,6 +22,7 @@ function getSumOfNumbers(number, type) {
         for(let i = 0; i <= number; i++){
             switch (type) {
                 case 'odd':
+                    // console.log('test1');
                     if (i % 2 !== 0) {
                         sum += i
                     }

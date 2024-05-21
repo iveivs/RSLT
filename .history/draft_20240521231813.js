@@ -14,7 +14,6 @@
 
 // console.log(Number.isInteger(a));
 
-
 function getSumOfNumbers(number, type) {
     let sum = 0
     if (isNaN(number) || arguments.length < 2) {
@@ -23,18 +22,16 @@ function getSumOfNumbers(number, type) {
         for(let i = 0; i <= number; i++){
             switch (type) {
                 case 'odd':
+                    console.log(object);
                     if (i % 2 !== 0) {
                         sum += i
                     }
-                    break
                 case 'even':
                     if (i % 2 === 0) {
                         sum += i
                     }
-                    break
                 case '':
                     sum += i
-                    break
             }
         }
     }
@@ -43,6 +40,6 @@ function getSumOfNumbers(number, type) {
 
 
 console.log(getSumOfNumbers(10, 'even'));
-console.log(getSumOfNumbers(10, 'odd'));
-console.log(getSumOfNumbers(10, ''));
-console.log(getSumOfNumbers());
+// console.log(getSumOfNumbers(10, 'odd'));
+// console.log(getSumOfNumbers(10, ''));
+// console.log(getSumOfNumbers());
