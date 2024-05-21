@@ -9,7 +9,3 @@
 // console.log(b);
 // tempFunc()
 // console.log(a);
-
-let a = 0.2
-
-console.log(Number.isInteger(a));

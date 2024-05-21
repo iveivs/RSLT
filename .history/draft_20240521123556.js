@@ -10,6 +10,5 @@
 // tempFunc()
 // console.log(a);
 
-let a = 0.2
-
-console.log(Number.isInteger(a));
+const getFullName = (name, surname) => `${name} ${surname}`;
+console.log(getFullName('Student', 'Student'));

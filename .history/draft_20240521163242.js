@@ -10,6 +10,6 @@
 // tempFunc()
 // console.log(a);
 
-let a = 0.2
+let a = -1
 
 console.log(Number.isInteger(a));

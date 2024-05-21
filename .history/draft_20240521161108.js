@@ -10,6 +10,9 @@
 // tempFunc()
 // console.log(a);
 
-let a = 0.2
-
-console.log(Number.isInteger(a));
+function milliseconds(x) {
+    if (isNaN(x)) {
+      return 'Not a Number!';
+    }
+    return x * 1000;
+  }
