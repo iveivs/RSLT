@@ -24,6 +24,17 @@
 //     console.log(`${symbol.description} - ${car2[symbol]}`);
 // }
 // console.log(car2[id]); 
+const projectInfo = {
+    name: 'The best project',
+    numberOfDevelopers: 5,
+};
+
+const changeProjectValue = (key, newValue) => {
+    projectInfo[key] = newValue;
+};
+
+changeProjectValue('numberOfDevelopers', 8);
+console.log('numberOfDevelopers', projectInfo.numberOfDevelopers);
 
 
 

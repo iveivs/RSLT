@@ -24,6 +24,10 @@
 //     console.log(`${symbol.description} - ${car2[symbol]}`);
 // }
 // console.log(car2[id]); 
-
+const car = {
+    name: 'BMW',
+    speed: 200,
+   };
+   console.log(car.owner);
 
 
