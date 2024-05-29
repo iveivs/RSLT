@@ -1,0 +1,3 @@
+function getDateFormat(date, separator) {
+
+}

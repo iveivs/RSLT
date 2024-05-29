@@ -35,19 +35,13 @@
 // const date = new Date()
 // console.log(date);
 
-const date1 = new Date('June 5, 2024')
+const date1 = new Date('September 5, 1985 14:00')
 // const date2 = new Date(2006, 4, 20)
-console.log(date1);
-console.log(date1.getTime());
-let dateInMs = date1.getTime()
-console.log(dateInMs);
-let dateBack = new Date(dateInMs)
-console.log('dateBack', dateBack);
 
-// const date2 = new Date(495626400000) // my date/my year
-// console.log(date2);
+console.log(date1.getTime());
+
+// const date2 = new Date(495626400000) 
+console.log(date2);
 
 // getDayconsole.log(date2.getFullYear());
 // date1.getDate
-
-// 1725483600000

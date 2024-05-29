@@ -40,9 +40,7 @@ const date1 = new Date('June 5, 2024')
 console.log(date1);
 console.log(date1.getTime());
 let dateInMs = date1.getTime()
-console.log(dateInMs);
-let dateBack = new Date(dateInMs)
-console.log('dateBack', dateBack);
+let dateBack = 
 
 // const date2 = new Date(495626400000) // my date/my year
 // console.log(date2);
