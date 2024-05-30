@@ -34,25 +34,14 @@ function getRandomNumberInRange(min, max) {
 }
 
 const resultWinner = getWinner(winnerApplicants, todaysWinner);
-console.log('resultWinner', resultWinner);
+console.log('resultWinner', resultWinner); 
 // { prize: '10 000$', name: 'Максим', age: 25 }
 // - - - - - - - - - - - - - - - - - - - -
 
 // Задание #5
 
 function getAdultUsers(data) {
-    if (Array.isArray(data)) {
-        const resultArr = data.filter(elem => elem.age > 18)
-        return resultArr
+    if(Array.isArray(data)) {
+        const resultArr = data.filter
     }
 }
-
-const usersArray = [
-    { id: '34rdca3eeb7f6fgeed471198', name: 'Andrew', age: 25 },
-    { id: '76rdca3eeb7f6fgeed471100', name: 'Alexey', age: 15 },
-    { id: '12rdca3eeb7f6fgeed4711012', name: 'Egor', age: 13 },
-    { id: '32rdca3eeb7f6fgeed471101', name: 'Kate', age: 31 },
-    { id: '98rdca3eeb7f6fgeed471102', name: 'Elena', age: 18 }
-];
-
-getAdultUsers(usersArray)

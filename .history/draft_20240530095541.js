@@ -55,4 +55,4 @@ const usersArray = [
     { id: '98rdca3eeb7f6fgeed471102', name: 'Elena', age: 18 }
 ];
 
-getAdultUsers(usersArray)
+getAdultUsers()
