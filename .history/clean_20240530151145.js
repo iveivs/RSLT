@@ -13,5 +13,5 @@
 // }
 // console.log(getDateFormat(494762400000));
 
-const date = new Date(2002, 05, 18);
-console.log(date.getTime()); 
+const date = new Date(2002, 05, 18, 12, 55, 10, 2000);
+console.log(date.get); 

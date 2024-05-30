@@ -223,8 +223,6 @@ const usersObject = {
 console.log(getAdultUsers(usersArray));
 console.log(getAdultUsers(usersObject));
 
-// - - - - - - - - - - - - - - - -
-
 // Задание 2.1
 
 const peopleWithVisa = [

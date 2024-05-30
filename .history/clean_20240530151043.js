@@ -12,6 +12,3 @@
 //     return dateArr.join(`${separator}`)
 // }
 // console.log(getDateFormat(494762400000));
-
-const date = new Date(2002, 05, 18);
-console.log(date.getTime()); 

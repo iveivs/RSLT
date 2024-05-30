@@ -121,18 +121,17 @@ const peopleWithVisa = [
 ];
 
 function allowVisa(objFromVisaCenter) {
-    const dateNow = Date.now()
-    const filteredArrforVisa = []
-    for(let user of objFromVisaCenter) {
+    // const dateNow = Date.now()
+    for(let  user of objFromVisaCenter) {
+        // console.log('user', user);
         if(user.criminalRecord === false) {
-            const dataForDate = user.passportExpiration.split('.')
-            const dateOfEndPassport = new Date(dataForDate[2], dataForDate[1] - 1, dataForDate[0]).getTime()
-            if(dateNow - dateOfEndPassport < 0){
-                filteredArrforVisa.push(user)
-            }
+            // console.log(user);
+            let dataForDate = user.passportExpiration.split('.')
+            console.log(dataForDate);
+            let dateOfEndPassport = new Date(dataForDate[2], dataForDate[1], dataForDate[0])
+            console.log(object);
         }
     }
-    return filteredArrforVisa
 }
 
 const result = allowVisa(peopleWithVisa);

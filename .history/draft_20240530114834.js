@@ -121,18 +121,8 @@ const peopleWithVisa = [
 ];
 
 function allowVisa(objFromVisaCenter) {
-    const dateNow = Date.now()
-    const filteredArrforVisa = []
-    for(let user of objFromVisaCenter) {
-        if(user.criminalRecord === false) {
-            const dataForDate = user.passportExpiration.split('.')
-            const dateOfEndPassport = new Date(dataForDate[2], dataForDate[1] - 1, dataForDate[0]).getTime()
-            if(dateNow - dateOfEndPassport < 0){
-                filteredArrforVisa.push(user)
-            }
-        }
-    }
-    return filteredArrforVisa
+    // const dateNow = Date.now()
+    for(let  user in objFromVisaCenter)
 }
 
 const result = allowVisa(peopleWithVisa);

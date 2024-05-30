@@ -123,7 +123,6 @@ console.log(
         ["Ben"]
     )
 ); // Убийца Megan
-
 // - - - - - - - - - - - - - - - -
 
 // Задание #4
@@ -223,51 +222,6 @@ const usersObject = {
 console.log(getAdultUsers(usersArray));
 console.log(getAdultUsers(usersObject));
 
-// - - - - - - - - - - - - - - - -
-
 // Задание 2.1
 
-const peopleWithVisa = [
-    {
-        firstName: 'Stasia',
-        lastName: 'Ward',
-        criminalRecord: true,
-        passportExpiration: '19.06.2040',
-    },
-    {
-        firstName: 'Elliot',
-        lastName: 'Baker',
-        criminalRecord: false,
-        passportExpiration: '04.06.2041',
-    },
-    {
-        firstName: 'Leighann',
-        lastName: 'Scott',
-        criminalRecord: true,
-        passportExpiration: '31.07.2039',
-    },
-    {
-        firstName: 'Nick',
-        lastName: 'Pop',
-        criminalRecord: false,
-        passportExpiration: '31.12.2010',
-    },
-];
-
-function allowVisa(objFromVisaCenter) {
-    const dateNow = Date.now()
-    const filteredArrforVisa = []
-    for(let user of objFromVisaCenter) {
-        if(user.criminalRecord === false) {
-            const dataForDate = user.passportExpiration.split('.')
-            const dateOfEndPassport = new Date(dataForDate[2], dataForDate[1] - 1, dataForDate[0]).getTime()
-            if(dateNow - dateOfEndPassport < 0){
-                filteredArrforVisa.push(user)
-            }
-        }
-    }
-    return filteredArrforVisa
-}
-
-const result = allowVisa(peopleWithVisa);
-console.log('result', result);
+function allowVisa(objFrom)
