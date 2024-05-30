@@ -124,7 +124,6 @@ console.log(
     )
 ); // Убийца Megan
 // - - - - - - - - - - - - - - - -
-
 // Задание #4
 
 const todaysWinner = {
@@ -166,8 +165,7 @@ const resultWinner = getWinner(winnerApplicants, todaysWinner);
 console.log('resultWinner', resultWinner); 
 // - - - - - - - - - - - - - - - - -
 
-// Задание #5
-
+// 
 function getAdultUsers(data) {
     if (Array.isArray(data)) {
         let resultArr = data.filter(elem => elem.age >= 18)

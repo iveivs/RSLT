@@ -38,19 +38,14 @@
 // // { prize: '10 000$', name: 'Максим', age: 25 }
 // - - - - - - - - - - - - - - - - - - - -
 
-// ЧЕРНОВИК
+// Задание #5
+
 function getAdultUsers(data) {
     if (Array.isArray(data)) {
         let resultArr = data.filter(elem => elem.age >= 18)
         return resultArr
     } else {
-        let resultObj = {}
-        for(let key in data){
-            if(data[key].age >= 18) {
-                resultObj[key] = data[key]
-            }
-        }
-        return resultObj
+        let resultArr
     }
 }
 
@@ -91,4 +86,3 @@ const usersObject = {
 };
 
 console.log(getAdultUsers(usersArray));
-console.log(getAdultUsers(usersObject));

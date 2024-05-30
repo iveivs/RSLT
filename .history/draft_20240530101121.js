@@ -47,6 +47,7 @@ function getAdultUsers(data) {
         let resultObj = {}
         for(let key in data){
             if(data[key].age >= 18) {
+                console.log(data[key]);
                 resultObj[key] = data[key]
             }
         }
@@ -90,5 +91,5 @@ const usersObject = {
     }
 };
 
-console.log(getAdultUsers(usersArray));
+// console.log(getAdultUsers(usersArray));
 console.log(getAdultUsers(usersObject));

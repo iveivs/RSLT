@@ -124,7 +124,6 @@ console.log(
     )
 ); // Убийца Megan
 // - - - - - - - - - - - - - - - -
-
 // Задание #4
 
 const todaysWinner = {
@@ -164,9 +163,7 @@ function getRandomNumberInRange(min, max) {
 
 const resultWinner = getWinner(winnerApplicants, todaysWinner);
 console.log('resultWinner', resultWinner); 
-// - - - - - - - - - - - - - - - - -
 
-// Задание #5
 
 function getAdultUsers(data) {
     if (Array.isArray(data)) {
@@ -182,7 +179,7 @@ function getAdultUsers(data) {
         return resultObj
     }
 }
-
+// 
 const usersArray = [
     { id: '34rdca3eeb7f6fgeed471198', name: 'Andrew', age: 25 },
     { id: '76rdca3eeb7f6fgeed471100', name: 'Alexey', age: 15 },

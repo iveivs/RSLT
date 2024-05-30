@@ -124,7 +124,6 @@ console.log(
     )
 ); // Убийца Megan
 // - - - - - - - - - - - - - - - -
-
 // Задание #4
 
 const todaysWinner = {

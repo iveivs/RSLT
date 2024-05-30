@@ -38,19 +38,19 @@
 // // { prize: '10 000$', name: 'Максим', age: 25 }
 // - - - - - - - - - - - - - - - - - - - -
 
-// ЧЕРНОВИК
+// Задание #5
+
 function getAdultUsers(data) {
     if (Array.isArray(data)) {
-        let resultArr = data.filter(elem => elem.age >= 18)
-        return resultArr
-    } else {
-        let resultObj = {}
-        for(let key in data){
-            if(data[key].age >= 18) {
-                resultObj[key] = data[key]
+        console.log("TEST");
+        let resultArr = data.filter(elem => {
+            if(elem.age > 18){
+                console.log('elem.age', elem.age);
+                return elem
             }
-        }
-        return resultObj
+        })
+        console.log('TEST 222');
+        return resultArr
     }
 }
 
@@ -62,33 +62,4 @@ const usersArray = [
     { id: '98rdca3eeb7f6fgeed471102', name: 'Elena', age: 18 }
 ];
 
-const usersObject = {
-    '34rdca3eeb7f6fgeed471198': {
-        id: '34rdca3eeb7f6fgeed471198',
-        name: 'Andrew',
-        age: 25
-    },
-    '76rdca3eeb7f6fgeed471100': {
-        id: '76rdca3eeb7f6fgeed471100',
-        name: 'Alexey',
-        age: 15
-    },
-    '12rdca3eeb7f6fgeed4711012': {
-        id: '12rdca3eeb7f6fgeed4711012',
-        name: 'Egor',
-        age: 13
-    },
-    '32rdca3eeb7f6fgeed471101': {
-        id: '32rdca3eeb7f6fgeed471101',
-        name: 'Kate',
-        age: 31
-    },
-    '98rdca3eeb7f6fgeed471102': {
-        id: '98rdca3eeb7f6fgeed471102',
-        name: 'Elena',
-        age: 18
-    }
-};
-
-console.log(getAdultUsers(usersArray));
-console.log(getAdultUsers(usersObject));
+getAdultUsers(usersArray)
