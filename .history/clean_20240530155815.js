@@ -23,7 +23,7 @@ function getWinner(applicants, winnerObject) {
     const winnerKey = arreyKeysOfApplicants[numberForWinner - 1]
     const result = {
         ...winnerObject,
-        ...applicants[winnerKey]
+        ...winner
     }
     return result
 }

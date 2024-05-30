@@ -21,9 +21,10 @@ function getWinner(applicants, winnerObject) {
     const arreyKeysOfApplicants = Object.keys(applicants)
     const numberForWinner = getRandomNumberInRange(1, arreyKeysOfApplicants.length + 1)
     const winnerKey = arreyKeysOfApplicants[numberForWinner - 1]
+    const winner = applicants[winnerKey]
     const result = {
         ...winnerObject,
-        ...applicants[winnerKey]
+        ...winner
     }
     return result
 }
