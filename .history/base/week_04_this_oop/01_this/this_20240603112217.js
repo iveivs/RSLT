@@ -1,0 +1,4 @@
+const student = {
+    stack: ['HTML'],
+    
+}
