@@ -11,16 +11,18 @@ const attacker = {
             if (typeof this[key] !== 'function'){
                 if (attacker[key] > defenderObject[key]) chanсes++
             }
+            console.log('chanсes:',chanсes, ', key: ' , key);
         }
         return [chanсes, Object.keys(defenderObject).length]
     },
     improveArmy() {
         for (let key in attacker) {
-            if (typeof this[key] !== 'function') attacker[key] += 5
+            if (!isNaN(attacker[key])) attacker[key] += 5
         }
     },
     attack(defender) {
         const ourArmyChances = this.checkChancesToWin(defender)
+        console.log('ourArmyChances', ourArmyChances);
         const ourArmyChancesInProcent = ourArmyChances[0] / (ourArmyChances[1] / 100)
         if (ourArmyChancesInProcent < 70) {
             console.log(`Наши шансы равны ${ourArmyChances[0]} / ${ourArmyChances[1]}. Необходимо укрепление!`);
@@ -40,4 +42,4 @@ const defender = {
 
 attacker.attack(defender); // Наши шансы равны 1/4. Необходимо укрепление! 
 attacker.attack(defender); // Наши шансы равны 2/4. Необходимо укрепление! 
-attacker.attack(defender); // Мы усилились! Мы несомненно победим! Наши шансы высоки!
+// attacker.attack(defender); // Мы усилились! Мы несомненно победим! Наши шансы высоки!

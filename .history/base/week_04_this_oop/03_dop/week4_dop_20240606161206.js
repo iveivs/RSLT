@@ -9,7 +9,7 @@ const attacker = {
         let chanсes = 0
         for (let key in attacker) {
             if (typeof this[key] !== 'function'){
-                if (attacker[key] > defenderObject[key]) chanсes++
+                if (attacker[key] < this.archer) chanсes++
             }
         }
         return [chanсes, Object.keys(defenderObject).length]

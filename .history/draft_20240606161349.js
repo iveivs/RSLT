@@ -7,16 +7,17 @@ const attacker = {
     artillery: 3,
     checkChancesToWin(defenderObject) {
         let chanсes = 0
-        for (let key in attacker) {
+        for (let key in this) {
             if (typeof this[key] !== 'function'){
-                if (attacker[key] > defenderObject[key]) chanсes++
+                if (attacker[key] < this.archer) chanсes++
             }
+            console.log('chanсes:',chanсes, ', key: ' , key);
         }
         return [chanсes, Object.keys(defenderObject).length]
     },
     improveArmy() {
-        for (let key in attacker) {
-            if (typeof this[key] !== 'function') attacker[key] += 5
+        for (let key in this.attacker) {
+            if (typeof this[key] !== 'function') this.attacker[key] += 5
         }
     },
     attack(defender) {

@@ -9,14 +9,15 @@ const attacker = {
         let chanсes = 0
         for (let key in attacker) {
             if (typeof this[key] !== 'function'){
-                if (attacker[key] > defenderObject[key]) chanсes++
+                if (attacker[key] < this.archer) chanсes++
             }
+            console.log('chanсes:',chanсes, ', key: ' , key);
         }
         return [chanсes, Object.keys(defenderObject).length]
     },
     improveArmy() {
-        for (let key in attacker) {
-            if (typeof this[key] !== 'function') attacker[key] += 5
+        for (let key in this.attacker) {
+            if (typeof this[key] !== 'function') this.attacker[key] += 5
         }
     },
     attack(defender) {
@@ -38,6 +39,6 @@ const defender = {
     artillery: 10,
 }
 
-attacker.attack(defender); // Наши шансы равны 1/4. Необходимо укрепление! 
-attacker.attack(defender); // Наши шансы равны 2/4. Необходимо укрепление! 
-attacker.attack(defender); // Мы усилились! Мы несомненно победим! Наши шансы высоки!
+// attacker.attack(defender); // Наши шансы равны 1/4. Необходимо укрепление! 
+// attacker.attack(defender); // Наши шансы равны 2/4. Необходимо укрепление! 
+// attacker.attack(defender); // Мы усилились! Мы несомненно победим! Наши шансы высоки!

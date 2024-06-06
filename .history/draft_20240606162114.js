@@ -11,6 +11,7 @@ const attacker = {
             if (typeof this[key] !== 'function'){
                 if (attacker[key] > defenderObject[key]) chanсes++
             }
+            console.log('chanсes:',chanсes, ', key: ' , key);
         }
         return [chanсes, Object.keys(defenderObject).length]
     },
@@ -40,4 +41,4 @@ const defender = {
 
 attacker.attack(defender); // Наши шансы равны 1/4. Необходимо укрепление! 
 attacker.attack(defender); // Наши шансы равны 2/4. Необходимо укрепление! 
-attacker.attack(defender); // Мы усилились! Мы несомненно победим! Наши шансы высоки!
+// attacker.attack(defender); // Мы усилились! Мы несомненно победим! Наши шансы высоки!
