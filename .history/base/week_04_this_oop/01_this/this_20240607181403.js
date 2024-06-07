@@ -51,13 +51,13 @@ function makeDomestic(isDomestic) {
 }
 // Более короткий вариант
 
-// function makeDomestic(isDomestic) {
-//     console.log(`${this.type} по имени ${this.name} говорит ${this.makeSound()}`);
-//     return {
-//         ...this,
-//         isDomestic
-//     };
-// }
+function makeDomestic(isDomestic) {
+    console.log(`${this.type} по имени ${this.name} говорит ${this.makeSound()}`);
+    return {
+        ...this,
+        isDomestic
+    };
+}
 
 console.log(makeDomestic.call(bird, false));
 console.log(makeDomestic.bind(dog, true)());

@@ -49,15 +49,7 @@ function makeDomestic(isDomestic) {
         makeSound: this.makeSound
     }
 }
-// Более короткий вариант
-
-// function makeDomestic(isDomestic) {
-//     console.log(`${this.type} по имени ${this.name} говорит ${this.makeSound()}`);
-//     return {
-//         ...this,
-//         isDomestic
-//     };
-// }
+// 
 
 console.log(makeDomestic.call(bird, false));
 console.log(makeDomestic.bind(dog, true)());
@@ -68,7 +60,7 @@ console.log(makeDomestic.apply(bird, [false]));
 
 const footballer = {
     fullName: 'Cristiano Ronaldo',
-    attack: function () {
+    attack: function(){
         console.log(`${this.fullName} сейчас с мячом и начинает атаку!`);
     },
     scoreGoal(sound) {
