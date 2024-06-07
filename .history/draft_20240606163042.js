@@ -50,7 +50,6 @@ const hardWordsDictionary = new HardWordsDictionary('Сложные слова')
 hardWordsDictionary.add('дилетант', 'Тот, кто занимается наукой или искусством без специальной подготовки, обладая только поверхностными знаниями.');
 
 hardWordsDictionary.add('неологизм', 'Новое слово или выражение, а также новое значение старого слова.');
-hardWordsDictionary.add('неологизм', 'авыожвыоаыжвалыовж');
 
 hardWordsDictionary.add('квант', 'Неделимая часть какой-либо величины в физике.');
 
