@@ -30,7 +30,7 @@ class Dictionary {
         }
     }
     _addNewWord(wordKey, wordObj) {
-        this.#words[wordKey] = wordObj
+        this.#words[wordKey] = 
     }
 }
 
@@ -64,3 +64,6 @@ console.log(hardWordsDictionary.mainName); // Сложные слова
 hardWordsDictionary.mainName = 'Новый Словарь';
 console.log(hardWordsDictionary.mainName); // Новый Словарь
 console.log('all words', hardWordsDictionary.allWords); // выводит объект в котором есть слова дилетант и квант
+
+'https://lk.result.school/pl/teach/control/lesson/view?id=268066763'
+'https://lk.result.school/pl/teach/control/lesson/view?id=268066762'

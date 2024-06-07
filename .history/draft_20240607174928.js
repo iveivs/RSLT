@@ -30,12 +30,15 @@ class Dictionary {
         }
     }
     _addNewWord(wordKey, wordObj) {
-        this.#words[wordKey] = wordObj
+        this.#words[wordKey] = { ['word']: wordKey, ['description']: wordObj.description }
     }
 }
 
 
 class HardWordsDictionary extends Dictionary {
+    constructor(name) {
+        super(name)
+    }
     add(word, description) {
         if (!this.allWords[word]) {
             this._addNewWord(word, {
@@ -64,3 +67,6 @@ console.log(hardWordsDictionary.mainName); // Сложные слова
 hardWordsDictionary.mainName = 'Новый Словарь';
 console.log(hardWordsDictionary.mainName); // Новый Словарь
 console.log('all words', hardWordsDictionary.allWords); // выводит объект в котором есть слова дилетант и квант
+
+'https://lk.result.school/pl/teach/control/lesson/view?id=268066763'
+'https://lk.result.school/pl/teach/control/lesson/view?id=268066762'

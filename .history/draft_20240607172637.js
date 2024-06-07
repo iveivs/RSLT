@@ -7,7 +7,8 @@ class Dictionary {
     }
     add(word, description) {
         const newWord = { word, description };
-        if (!this.#words.hasOwnProperty(word)) this._addNewWord(word, newWord)
+        cl
+        if(!this.#words.hasOwnProperty(word)) this._addNewWord(word, newWord)
     }
     remove(keyForRemove) {
         delete this.#words[keyForRemove]
@@ -30,20 +31,17 @@ class Dictionary {
         }
     }
     _addNewWord(wordKey, wordObj) {
-        this.#words[wordKey] = wordObj
+        this.#words = { ['word']: wordKey, ['description']: wordObj.description }
     }
 }
 
 
 class HardWordsDictionary extends Dictionary {
-    add(word, description) {
-        if (!this.allWords[word]) {
-            this._addNewWord(word, {
-                word,
-                description,
-                isDifficult: true
-            });
-        }
+    constructor(name) {
+        super(name)
+    }
+    _addNewWord(wordKey, wordObj) {
+        return { ['word']: wordKey, ['description']: wordObj.description, ['isDifficult']: true }
     }
 
 }
@@ -63,4 +61,7 @@ hardWordsDictionary.showAllWords();
 console.log(hardWordsDictionary.mainName); // Сложные слова
 hardWordsDictionary.mainName = 'Новый Словарь';
 console.log(hardWordsDictionary.mainName); // Новый Словарь
-console.log('all words', hardWordsDictionary.allWords); // выводит объект в котором есть слова дилетант и квант
+console.log(hardWordsDictionary.allWords); // выводит объект в котором есть слова дилетант и квант
+
+'https://lk.result.school/pl/teach/control/lesson/view?id=268066763'
+'https://lk.result.school/pl/teach/control/lesson/view?id=268066762'
