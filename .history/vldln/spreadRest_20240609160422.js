@@ -64,35 +64,6 @@ const [sub, , mult ] = calcValues(33,11)
 console.log(sub, mult);
 //  так же при деструктизации можно создавать переменные со значением по умолчанию.
 
-const persone = {
-    name: 'Max',
-    age: 33,
-    adress: {
-        country: 'Chili',
-        city: 'Santiyago'
-    }
-}
+c
 
-const {neme: objName, objAge , work = 'driver', adress: {city: homeTown, country}} = persone
-// console.log(work); // driver
-// console.log(homeTown); // Santiyago
 
-// - - - -
-
-const persone2 = {
-    name: 'Alex',
-    age: 44,
-    adress: {
-        country: 'Chili',
-        city: 'Santiyago'
-    }
-}
-
-const {name: personName, ...info} = persone2
-console.log(info); // { name: 'Max',age: 33, adress: { country: 'Chili', city: 'Santiyago' }}
-console.log(personName);
-
-function logPersone({name, age}){
-    console.log(name, ' ', age);
-}
-logPersone(persone2) // Alex  44

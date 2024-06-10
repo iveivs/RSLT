@@ -80,8 +80,8 @@ const {neme: objName, objAge , work = 'driver', adress: {city: homeTown, country
 // - - - -
 
 const persone2 = {
-    name: 'Alex',
-    age: 44,
+    name: 'Max',
+    age: 33,
     adress: {
         country: 'Chili',
         city: 'Santiyago'
@@ -92,7 +92,4 @@ const {name: personName, ...info} = persone2
 console.log(info); // { name: 'Max',age: 33, adress: { country: 'Chili', city: 'Santiyago' }}
 console.log(personName);
 
-function logPersone({name, age}){
-    console.log(name, ' ', age);
-}
-logPersone(persone2) // Alex  44
+function logPersone()

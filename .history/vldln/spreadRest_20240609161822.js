@@ -95,4 +95,4 @@ console.log(personName);
 function logPersone({name, age}){
     console.log(name, ' ', age);
 }
-logPersone(persone2) // Alex  44
+logPersone(persone2) // Alex   44
