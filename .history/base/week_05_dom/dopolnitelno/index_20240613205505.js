@@ -46,6 +46,7 @@ class CustomSelect {
             
             console.log(selectDropdownList.children);
             selectDropdownList.childNodes.forEach(elem => {
+                console.log(elem);
                 elem.classList.remove('selected')
             })
             target.classList.toggle('selected')

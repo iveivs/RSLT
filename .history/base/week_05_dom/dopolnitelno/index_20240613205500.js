@@ -43,12 +43,12 @@ class CustomSelect {
             const { target } = event
             this.#currentSelectedOption = this.#options.filter(elem => elem.value === +target.dataset.dataValue)
             selectDropdownText.textContent = target.textContent
-            
+            target.classList.toggle('selected')
             console.log(selectDropdownList.children);
             selectDropdownList.childNodes.forEach(elem => {
+                console.log(elem);
                 elem.classList.remove('selected')
             })
-            target.classList.toggle('selected')
             selectDropdownList.classList.remove('active')
         })
 
