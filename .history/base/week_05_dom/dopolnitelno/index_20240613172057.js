@@ -3,9 +3,8 @@ class CustomSelect {
     #options
     constructor(id, options) {
         this.#id = id,
-        this.#options = options
+            this.#options = options
     }
-    #currentSelectedOption
 
     #listMarkup() {
         const selectDropdown = document.createElement('div')
@@ -39,25 +38,24 @@ class CustomSelect {
             }
         })
 
-        selectDropdownList.addEventListener('click', event => {
-            const { target } = event
-            this.#currentSelectedOption = this.#options.filter(elem => elem.value === +target.dataset.dataValue)
-            selectDropdownText.textContent = target.textContent
-            target.classList.add('selected')
-            selectDropdownList.classList.remove('active')
-        })
+        selectDropdownList.addEventListener('click')
 
         return selectDropdown
 
     }
 
-    get selectedValue() {
-        return this.#currentSelectedOption
+    setupListener() {
+
     }
 
     render(container) {
         container.append(this.#listMarkup())
     }
+
+    get data() {
+        console.log(this.#id, this.#options);
+    }
+
 
 }
 
@@ -73,7 +71,11 @@ const customSelect = new CustomSelect('1234', options);
 const mainContainer = document.querySelector('#container');
 customSelect.render(mainContainer);
 
+const selectDropdownButton = document.querySelector('.select-dropdown__button')
+// selectDropdownButton.addEventListener('click', event => {
+//     const { target } = event
 
+// })
 
 
 

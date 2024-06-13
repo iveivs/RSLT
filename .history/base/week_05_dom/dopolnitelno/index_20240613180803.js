@@ -52,7 +52,7 @@ class CustomSelect {
     }
 
     get selectedValue() {
-        return this.#currentSelectedOption
+        return this.#currentSelectedOption?
     }
 
     render(container) {

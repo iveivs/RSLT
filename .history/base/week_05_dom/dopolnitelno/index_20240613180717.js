@@ -59,6 +59,11 @@ class CustomSelect {
         container.append(this.#listMarkup())
     }
 
+    get data() {
+        console.log(this.#id, this.#options);
+    }
+
+
 }
 
 const options = [

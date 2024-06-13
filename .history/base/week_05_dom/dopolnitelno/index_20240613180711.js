@@ -33,6 +33,7 @@ class CustomSelect {
         })
 
         // откр/закр выпадающего списка
+
         selectDropdownButton.addEventListener('click', event => {
             if(event.target.closest('.select-dropdown__button')){
                 selectDropdownList.classList.toggle('active')
@@ -44,6 +45,7 @@ class CustomSelect {
             this.#currentSelectedOption = this.#options.filter(elem => elem.value === +target.dataset.dataValue)
             selectDropdownText.textContent = target.textContent
             target.classList.add('selected')
+            console.log(target);
             selectDropdownList.classList.remove('active')
         })
 
@@ -58,6 +60,11 @@ class CustomSelect {
     render(container) {
         container.append(this.#listMarkup())
     }
+
+    get data() {
+        console.log(this.#id, this.#options);
+    }
+
 
 }
 

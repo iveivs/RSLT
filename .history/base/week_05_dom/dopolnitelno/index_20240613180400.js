@@ -33,6 +33,11 @@ class CustomSelect {
         })
 
         // откр/закр выпадающего списка
+        // selectDropdownButton.addEventListener('click', event => {
+        //     if(event.target.closest('.select-dropdown__button')){
+        //         selectDropdownList.classList.toggle('active')
+        //     }
+        // })
         selectDropdownButton.addEventListener('click', event => {
             if(event.target.closest('.select-dropdown__button')){
                 selectDropdownList.classList.toggle('active')
@@ -42,9 +47,11 @@ class CustomSelect {
         selectDropdownList.addEventListener('click', event => {
             const { target } = event
             this.#currentSelectedOption = this.#options.filter(elem => elem.value === +target.dataset.dataValue)
+            // console.log(target.textContent);
             selectDropdownText.textContent = target.textContent
             target.classList.add('selected')
-            selectDropdownList.classList.remove('active')
+            console.log(target);
+            selectDropdownList
         })
 
         return selectDropdown
@@ -58,6 +65,11 @@ class CustomSelect {
     render(container) {
         container.append(this.#listMarkup())
     }
+
+    get data() {
+        console.log(this.#id, this.#options);
+    }
+
 
 }
 
@@ -73,7 +85,11 @@ const customSelect = new CustomSelect('1234', options);
 const mainContainer = document.querySelector('#container');
 customSelect.render(mainContainer);
 
+const selectDropdownButton = document.querySelector('.select-dropdown__button')
+// selectDropdownButton.addEventListener('click', event => {
+//     const { target } = event
 
+// })
 
 
 
