@@ -108,6 +108,7 @@ const photoContainer = document.querySelector('#photo-container')
 
 const getFastestLoadedPhoto = (ids) => {
     const request = ids.map(id => fetch(`${PHOTO_URL}/${id}`))
+    console.log('photo request', request);
     Promise.race(request)
         .then((result) => { 
             const res = result.json()
@@ -121,9 +122,6 @@ const getFastestLoadedPhoto = (ids) => {
             </h3>
         </li>`
         photoContainer.insertAdjacentHTML('beforeend', photoHtml)
-        })
-        .catch((error) => {
-            console.error(error)
         })
 }
 getFastestLoadedPhoto([60, 12, 55])

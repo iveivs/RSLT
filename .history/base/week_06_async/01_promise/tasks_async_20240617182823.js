@@ -123,7 +123,7 @@ const getFastestLoadedPhoto = (ids) => {
         photoContainer.insertAdjacentHTML('beforeend', photoHtml)
         })
         .catch((error) => {
-            console.error(error)
+            console.log(eror)
         })
 }
 getFastestLoadedPhoto([60, 12, 55])
