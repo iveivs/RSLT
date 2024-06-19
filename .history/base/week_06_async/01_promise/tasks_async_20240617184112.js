@@ -121,7 +121,6 @@ const getFastestLoadedPhoto = (ids) => {
             </h3>
         </li>`
         photoContainer.insertAdjacentHTML('beforeend', photoHtml)
-        console.log('TSET');
         })
         .catch((error) => {
             console.error(error)
