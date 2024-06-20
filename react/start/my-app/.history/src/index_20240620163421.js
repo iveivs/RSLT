@@ -5,10 +5,10 @@ import { App } from './App';
 import { ClearJS } from './clearJsAppComponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(React.createElement(ClearJS));
+root.render(React.createElement(Clear));
 root.render(
-	<React.StrictMode>
-		<App />
-		< ClearJS />
-	</React.StrictMode>
+  <React.StrictMode>
+    <App />
+    < Clear />
+  </React.StrictMode>
 );

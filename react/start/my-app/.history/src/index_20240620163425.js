@@ -7,8 +7,8 @@ import { ClearJS } from './clearJsAppComponent';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(React.createElement(ClearJS));
 root.render(
-	<React.StrictMode>
-		<App />
-		< ClearJS />
-	</React.StrictMode>
+  <React.StrictMode>
+    <App />
+    < ClearJS />
+  </React.StrictMode>
 );
