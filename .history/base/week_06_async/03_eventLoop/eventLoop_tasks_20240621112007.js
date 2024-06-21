@@ -20,20 +20,20 @@ console.log('End'); // macrotask
 
 // Задание #2
 
-function runCode() {
-    console.log('before promise'); // macrotask
-    return new Promise((resolve) => { 
-        setTimeout(() => {
-            console.log('Zero Promise'); // Callback queue 2
-            resolve();
-        }, 0);
-    });
-}
-setTimeout(() => {
-    console.log('Zero'); // Callback queue 1
-}, 0);
-runCode().then(() => console.log('Zero Promise Invoked')); // macrotask -> microtask
-console.log('One'); // macrotask
+// function runCode() {
+//     console.log('before promise'); // macrotask
+//     return new Promise((resolve) => { 
+//         setTimeout(() => {
+//             console.log('Zero Promise'); // Callback queue 2
+//             resolve();
+//         }, 0);
+//     });
+// }
+// setTimeout(() => {
+//     console.log('Zero'); // Callback queue 1
+// }, 0);
+// runCode().then(() => console.log('Zero Promise Invoked')); // macrotask -> microtask
+// console.log('One'); // macrotask
 
 // Мой вариант:
 // before promise
