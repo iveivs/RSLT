@@ -1,3 +1,0 @@
-function tempFunc() {
-    var 
-}

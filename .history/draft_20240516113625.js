@@ -1,1 +1,0 @@
-const str = '5 '
