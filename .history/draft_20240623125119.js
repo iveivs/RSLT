@@ -1,0 +1,26 @@
+// const func = (cal) => {
+//     console.log('FROM FUNC');
+//     cal()
+// }
+
+// func(() => {
+//     console.log("FROM ANONIM CALBCK");
+// })
+// console.log('LOG');
+
+console.log('START');
+const somePromise = new Promise((res, rej) => {
+    res('Im value from resolve')
+    console.log('after res()');
+    rej()
+})
+
+somePromise.then(fromRes => {
+    console.log('message from then to Res');
+    console.log(fromRes);
+})
+.catch(err => {
+    console.log('ERROR', err);
+})
+console.log('END');
+console.log(somePromise);

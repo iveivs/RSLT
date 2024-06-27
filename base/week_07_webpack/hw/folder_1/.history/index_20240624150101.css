@@ -1,0 +1,10 @@
+* {
+    margin: 40px;
+}
+body {
+    padding: 40px;
+    background-color: pink;
+    color: purple;
+    margin: 0;
+    padding: 0;
+}
