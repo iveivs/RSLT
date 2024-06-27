@@ -9,9 +9,7 @@ function App() {
     const [showYellowText, setShowYellowText] = useState(false);
 
     const showDisplay = (event) => {
-        if(dispNum[0] === '0'){
-          showDispNum('')
-        }
+        if()
         showDispNum((prev) => prev + event.target.textContent);
     };
 
@@ -36,8 +34,12 @@ function App() {
         setShowYellowText(true)
     };
 
+    // const isFirstNumZero = () => {
+    //   dispNum[0] == '0' ? showDispNum('') : null
+    // }
+
     const clearDisplay = () => {
-      showDispNum("0")
+      showDispNum("")
       setShowYellowText(false)
     };
     //

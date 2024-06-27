@@ -36,8 +36,12 @@ function App() {
         setShowYellowText(true)
     };
 
+    // const isFirstNumZero = () => {
+    //   dispNum[0] == '0' ? showDispNum('') : null
+    // }
+
     const clearDisplay = () => {
-      showDispNum("0")
+      showDispNum("")
       setShowYellowText(false)
     };
     //

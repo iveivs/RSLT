@@ -4,14 +4,11 @@ import classes from "./App.module.css";
 const numButtons = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
 
 function App() {
-    const [dispNum, showDispNum] = useState("0");
+    const [dispNum, showDispNum] = useState("");
     const [curOper, setCurOper] = useState();
     const [showYellowText, setShowYellowText] = useState(false);
 
     const showDisplay = (event) => {
-        if(dispNum[0] === '0'){
-          showDispNum('')
-        }
         showDispNum((prev) => prev + event.target.textContent);
     };
 
@@ -36,8 +33,10 @@ function App() {
         setShowYellowText(true)
     };
 
+    const isFirstNumZero
+
     const clearDisplay = () => {
-      showDispNum("0")
+      showDispNum("")
       setShowYellowText(false)
     };
     //
@@ -54,7 +53,6 @@ function App() {
                 <div
                     className={classes.btn__cover}
                     onClick={(e) => {
-                        // isFirstNumZero
                         showDisplay(e);
                     }}
                 >
