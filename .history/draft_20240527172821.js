@@ -1,4 +1,0 @@
-let = str = 'Kasandra'
-str = ''
-
-
