@@ -30,8 +30,8 @@ export  const App = () => {
 	const startFrom = (curTarget) => {
 		console.log(curTarget.target);
 		console.log(curTarget.target.textContent);
-		let numPosition = Number(curTarget.target.textContent)
-		setActiveIndex(numPosition - 1)
+		// let numPosition = Number(curTarget.target.textContent)
+		// setActiveIndex(numPosition)
 	}
 
 	return (

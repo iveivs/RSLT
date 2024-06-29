@@ -31,7 +31,7 @@ export  const App = () => {
 		console.log(curTarget.target);
 		console.log(curTarget.target.textContent);
 		let numPosition = Number(curTarget.target.textContent)
-		setActiveIndex(numPosition - 1)
+		// setActiveIndex(numPosition)
 	}
 
 	return (

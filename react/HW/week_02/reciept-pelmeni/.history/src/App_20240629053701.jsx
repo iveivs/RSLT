@@ -27,11 +27,10 @@ export  const App = () => {
 		setActiveIndex(0)
 	}
 
-	const startFrom = (curTarget) => {
-		console.log(curTarget.target);
-		console.log(curTarget.target.textContent);
-		let numPosition = Number(curTarget.target.textContent)
-		setActiveIndex(numPosition - 1)
+	const startFrom = (position) => {
+		console.log(posit);
+		// let numPosition = Number(position)
+		// setActiveIndex(numPosition)
 	}
 
 	return (

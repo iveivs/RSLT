@@ -27,11 +27,9 @@ export  const App = () => {
 		setActiveIndex(0)
 	}
 
-	const startFrom = (curTarget) => {
-		console.log(curTarget.target);
-		console.log(curTarget.target.textContent);
-		let numPosition = Number(curTarget.target.textContent)
-		setActiveIndex(numPosition - 1)
+	const startFrom = (position) => {
+		
+		setActiveIndex(position)
 	}
 
 	return (
@@ -44,7 +42,7 @@ export  const App = () => {
 						{/* Контент соответственный шагу. Сейчас активен шаг 3 */}
 						{steps[activeIndex].content}
 					</div>
-					<ul className={styles['steps-list']} onClick={(e) => {startFrom(e)}}>
+					<ul className={styles['steps-list']} onClick={}>
 						{steps.map((obj) => (
 							<li key={obj.id} className={styles['steps-item'] + (activeIndex + 1  === Number(obj.id.slice(2)) ? ' ' + styles.active : ' ' + styles.done)}>
 							{/* Для того, чтобы вычислить необходимый класс используйте активный индекс, текущий индекс, а также тернарные операторы */}
