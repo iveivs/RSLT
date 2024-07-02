@@ -1,7 +1,9 @@
-import "../index.css";
+import "./index.css";
 console.log('Hello World!');
 
-import MY_IMAGE from '../assets/jspic.png';
+import "./index.css";
+import "./index.css";
+import MY_IMAGE from './assets/jspic.png';
 
 // Остальной код
 const h1 = document.createElement('h1')
