@@ -1,0 +1,31 @@
+import { Component } from '../core/Component';
+
+export class List extends Component {
+  setup(props) {
+    this.state = {
+      changeAmount: props.changeAmount
+    }
+
+    // console.log('changeAmount', this.state.changeAmount());
+    this.$rootElement = document.createElement('div');
+    this.$rootElement.className = 'donates-container';
+
+    // ...
+
+    const list = document.createElement('h2')
+    list.className = 'donates-container__title'
+    list.textContent = 'Список донатов'
+    this.$rootElement.append(list)
+
+    const listContainer = document.createElement('div')
+    listContainer.className = 'donates-container__donates'
+    this.$rootElement.appendChild(listContainer)
+
+    this.$listContainer = listContainer
+  }
+
+  addItem(item) {
+    // ...
+    this.$listContainer.appendChild(item.$rootElement)
+  }
+}
