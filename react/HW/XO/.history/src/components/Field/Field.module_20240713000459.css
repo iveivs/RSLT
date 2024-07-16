@@ -1,0 +1,18 @@
+.container {
+	margin: 0 auto	;
+	/* border: 1px solid red; */
+	height: 300px;
+	width: 300px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.fieldItem {
+	height: 98px;
+	width: 98px;
+
+}
+.fieldItem1 {
+	border-bottom: 1px solid red;
+	border-right: 1px solid red;;
+}

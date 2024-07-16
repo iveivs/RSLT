@@ -1,0 +1,1 @@
+https://github.com/s1vo/hakaton-2.git

@@ -1,0 +1,14 @@
+.container {
+	margin: 0 auto	;
+	border: 1px solid red;
+	height: 300px;
+	width: 300px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.fieldItem {
+	height: 90px;
+	width: 100px;
+	border: 1px solid red;
+}

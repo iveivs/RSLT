@@ -1,0 +1,3 @@
+const someObj = () => ({
+    name: ''
+})

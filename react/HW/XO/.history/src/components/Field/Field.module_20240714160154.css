@@ -1,0 +1,52 @@
+.container {
+	margin: 0 auto	;
+	/* border: 1px solid red; */
+	height: 300px;
+	width: 300px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.fieldItem {
+	height: 98px;
+	width: 98px;
+}
+.fieldItem:hover {
+	background-color: #2d2d2d;
+}
+.fieldItem1 {
+	border: 1px solid red;
+	/* border-right: 1px solid red;; */
+}
+/* .fieldItem1 {
+	border-bottom: 1px solid red;
+	border-right: 1px solid red;;
+}
+.fieldItem2 {
+	border-bottom: 1px solid red;
+	border-right: 1px solid red;;
+}
+.fieldItem3 {
+	border-bottom: 1px solid red;
+
+}
+.fieldItem4 {
+	border-bottom: 1px solid red;
+	border-right: 1px solid red;;
+}
+.fieldItem5 {
+	border-bottom: 1px solid red;
+	border-right: 1px solid red;;
+}
+.fieldItem6 {
+	border-bottom: 1px solid red;
+}
+.fieldItem7 {
+	border-right: 1px solid red;;
+}
+.fieldItem8 {
+	border-right: 1px solid red;;
+}
+.fieldItem9 {
+
+} */
