@@ -1,0 +1,17 @@
+import { useState } from 'react'
+import './App.css'
+
+function App() {
+  
+
+  return (
+    <>
+      <h1>Form</h1>
+      <input type="email" />
+      <input type="password" />
+      <input type="password" />
+    </>
+  )
+}
+
+export default App
