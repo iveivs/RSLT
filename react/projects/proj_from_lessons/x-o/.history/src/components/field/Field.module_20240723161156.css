@@ -1,0 +1,10 @@
+.field {
+    display: flex;
+    fw
+    width: 300px;
+    margin: 20px 0;
+}
+.cell {
+    width: 100px;
+    height: 100px;
+}
