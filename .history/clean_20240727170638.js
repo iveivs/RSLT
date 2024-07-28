@@ -1,0 +1,1 @@
+const someData = new Promise(())

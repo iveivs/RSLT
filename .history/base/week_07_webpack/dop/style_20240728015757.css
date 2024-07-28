@@ -1,0 +1,13 @@
+.post {
+    width: 400px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.post__text {
+    font-size: 18px;
+    font-weight: normal;
+}
+.post__comments {
+    font-size: 16px;
+    col
+}
