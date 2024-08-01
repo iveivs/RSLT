@@ -1,0 +1,14 @@
+{
+	"todos": [
+		{
+			"id": "001",
+			"name": "reed the book",
+			"price": 35000
+		},
+		{
+			"id": "002",
+			"name": "phone at work"
+
+		}
+	]
+}

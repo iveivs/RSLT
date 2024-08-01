@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": "001",
+      "name": "телевизор",
+      "price": 35000
+    },
+    {
+      "name": "смартфон",
+      "price": 321,
+      "id": "2"
+    },
+    {
+      "name": "смартфон",
+      "price": 321,
+      "id": "2"
+    },
+    {
+      "name": "name 4",
+      "price": 123,
+      "id": "p1JntZo"
+    },
+    {
+      "name": "name 4",
+      "price": 123,
+      "id": "-33bulA"
+    },
+    {
+      "name": "name 4",
+      "price": 123,
+      "id": "v9uqTy_"
+    }
+  ]
+}

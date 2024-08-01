@@ -1,0 +1,11 @@
+form {
+	margin-left: ;
+}
+.task_input {
+	width: 400px;
+	/* border: none; */
+	border: 1px solid #F25A38;
+	border-radius: 8px;
+	margin-bottom: 20px;
+	height: 28px;
+}

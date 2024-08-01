@@ -1,0 +1,45 @@
+{
+	"todos": [
+	  {
+		"task": "reed the book",
+		"complited": "true",
+		"id": "001"
+	  },
+	  {
+		"task": "do it",
+		"complited": "true",
+		"id": "H5y5bN6"
+	  },
+	  {
+		"task": "Новая задача",
+		"id": "mHCyFU5"
+	  },
+	  {
+		"task": "Выпить кофе",
+		"complited": "true",
+		"id": "wYSW9bP"
+	  },
+	  {
+		"task": "Сходить в магазин",
+		"complited": "true",
+		"id": "qu9Oke6"
+	  },
+	  {
+		"task": "Поиграть на барабанах",
+		"id": "bs8OKID"
+	  },
+	  {
+		"task": "сходить в кино",
+		"complited": "true",
+		"id": "gjYao5H"
+	  },
+	  {
+		"task": "Прочитать статью",
+		"id": "vyDQoDR"
+	  },
+	  {
+		"task": "добавить задачу",
+		"id": "T37SZWU"
+	  }
+	]
+  }

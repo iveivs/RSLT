@@ -1,0 +1,10 @@
+.list_item {
+	border: 1px solid #B22222;
+	padding: 6px;
+	border-radius: 8px;
+	list-style-type:  none;
+	margin: 14px;
+	text-align: left;
+}
+
+

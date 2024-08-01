@@ -1,0 +1,24 @@
+form {
+	margin-left: 40px;
+}
+.task_input {
+	width: 400px;
+	/* border: none; */
+	border: 1px solid #F25A38;
+	border-radius: 8px;
+	margin-bottom: 20px;
+	height: 28px;
+	padding-left: 10px;
+}
+.form_button {
+	width: 100%;
+	padding: 8px;
+	border-radius: 8px;
+	border: none;
+	background-color: #F25A38;
+	color: #F2F2F2;
+	cursor: pointer;
+}
+.checkbox_container {
+	margin-bottom: 20px;
+}
