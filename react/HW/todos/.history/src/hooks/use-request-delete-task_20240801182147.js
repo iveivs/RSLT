@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export const useRequestDeleteTask = (refreshTodos) => {
+export const useRequestDeleteTask = (refreshTodoss) => {
     const [isDeleting, setIsDeleting] = useState(false);
 
     const requestDeleteTask = (todo) => {
@@ -12,7 +12,7 @@ export const useRequestDeleteTask = (refreshTodos) => {
             .then((rawResponse) => rawResponse.json())
             .then((response) => {
                 console.log("Задача удалена с сервера", response);
-                refreshTodos();
+                refreshProducts();
             })
             .finally(() => setIsDeleting(false));
     }

@@ -12,20 +12,20 @@ function App() {
 	const [isChecked, setIsChecked] = useState(false);
 	const [fiindImput, setFindInput] = useState('')
 	// состояние обновления данных на странице
-	const [refreshTodosFlag, setRefreshTodosFlag] = useState(false);
+	const [refreshTodosFlag, setrefreshTodosFlag] = useState(false);
 	// ф-я для обновления данных на странице
-	const refreshTodos = () => setRefreshTodosFlag(!refreshTodosFlag);
+	const refreshProducts = () => setrefreshTodosFlag(!refreshTodosFlag);
 
 	let { isLoading, todos } = useRequestGetTodos(refreshTodosFlag);
 
 	const { isCreating, requestAddSomeTodo } = useRequestAddSomeTodo(
-		refreshTodos,
+		refreshProducts,
 		input,
 	);
 
-	const { isDeleting, requestDeleteTask } = useRequestDeleteTask(refreshTodos);
+	const { isDeleting, requestDeleteTask } = useRequestDeleteTask(refreshProducts);
 
-	const { requestUpdateTodo } = useRequestUpdateTodo(refreshTodos);
+	const { requestUpdateTodo } = useRequestUpdateTodo(refreshProducts);
 	// клонируем список
 	let newTodos = [...todos];
 

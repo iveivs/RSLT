@@ -23,7 +23,7 @@ function App() {
 		input,
 	);
 
-	const { isDeleting, requestDeleteTask } = useRequestDeleteTask(refreshTodos);
+	const { isDeleting, requestDeleteTask } = useRequestDeleteTask(refreshProducts);
 
 	const { requestUpdateTodo } = useRequestUpdateTodo(refreshTodos);
 	// клонируем список

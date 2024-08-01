@@ -18,7 +18,7 @@ export const useRequestUpdateTodo = (refreshTodos) => {
         })
             .then((rawResponse) => rawResponse.json())
             .then((response) => {
-                refreshTodos();
+                refreshProducts();
             })
 			.finally(() => setIsUpdating(false));
     }

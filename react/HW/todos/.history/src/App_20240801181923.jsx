@@ -23,9 +23,9 @@ function App() {
 		input,
 	);
 
-	const { isDeleting, requestDeleteTask } = useRequestDeleteTask(refreshTodos);
+	const { isDeleting, requestDeleteTask } = useRequestDeleteTask(refreshProducts);
 
-	const { requestUpdateTodo } = useRequestUpdateTodo(refreshTodos);
+	const { requestUpdateTodo } = useRequestUpdateTodo(refreshProducts);
 	// клонируем список
 	let newTodos = [...todos];
 

@@ -8,6 +8,15 @@
     {
       "task": "Посмотреть урок",
       "id": 2
+    },
+    {
+      "task": "new task",
+      "complited": "true",
+      "id": 3
+    },
+    {
+      "task": "абвгд",
+      "id": 4
     }
   ]
 }

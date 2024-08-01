@@ -12,7 +12,7 @@ export const useRequestDeleteTask = (refreshTodos) => {
             .then((rawResponse) => rawResponse.json())
             .then((response) => {
                 console.log("Задача удалена с сервера", response);
-                refreshTodos();
+                refreshProducts();
             })
             .finally(() => setIsDeleting(false));
     }

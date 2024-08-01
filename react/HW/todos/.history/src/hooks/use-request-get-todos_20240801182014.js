@@ -13,7 +13,7 @@ export const useRequestGetTodos = (refreshTodosFlag) => {
                 setTodos(loadedTodos);
             })
             .finally(() => setIsloading(false));
-    }, [refreshTodosFlag]);
+    }, [refreshProductsFlag]);
 
     return {
         todos,

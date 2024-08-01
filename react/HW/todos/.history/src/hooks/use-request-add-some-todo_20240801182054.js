@@ -16,7 +16,7 @@ export const useRequestAddSomeTodo = (refreshTodos, input) => {
         })
             .then((rawResponse) => rawResponse.json())
             .then((response) => {
-                console.log("Задача добавлена", response);
+                console.log("Товар добавлен", response);
                 refreshTodos();
             })
             .finally(() => setIsCreating(false));
