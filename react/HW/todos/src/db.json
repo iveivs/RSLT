@@ -17,6 +17,16 @@
     {
       "task": "абвгд",
       "id": 4
+    },
+    {
+      "task": "some task",
+      "complited": "false",
+      "id": 5
+    },
+    {
+      "task": "new2",
+      "complited": "true",
+      "id": 7
     }
   ]
 }
