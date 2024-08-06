@@ -1,0 +1,15 @@
+.span_checkboxText {
+	color: #F24822;
+	margin-right: 10px;
+}
+.checkbox_container {
+	margin-bottom: 20px;
+}
+.sort_checkbox {
+	border: 1px solid #F25A38;
+	color: #F25A38;
+}
+.sort_checkbox:checked {
+	border: 1px solid #F25A38;
+	color: #F25A38;
+}

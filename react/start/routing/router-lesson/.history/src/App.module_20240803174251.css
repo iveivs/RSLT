@@ -1,0 +1,10 @@
+.container {
+  text-align: center;
+}
+li {
+  list-style-type: none;
+}
+
+:G\g .active {
+  text-decoration: none;
+}

@@ -1,0 +1,33 @@
+{
+  "todos": [
+    {
+      "task": "Купить молоко",
+      "complited": "true",
+      "id": 1
+    },
+    {
+      "task": "Посмотреть урок",
+      "complited": "true",
+      "id": 2
+    },
+    {
+      "task": "new task",
+      "complited": "true",
+      "id": 3
+    },
+    {
+      "task": "абвгд",
+      "id": 4
+    },
+    {
+      "task": "some task",
+      "complited": "false",
+      "id": 5
+    },
+    {
+      "task": "new2",
+      "complited": "true",
+      "id": 7
+    }
+  ]
+}
