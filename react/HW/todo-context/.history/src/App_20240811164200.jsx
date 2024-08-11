@@ -25,7 +25,7 @@ function App() {
 
     useEffect(() => {
         let updatedTodos = [...todos];
-		// Сортировка
+		// 
         if (isChecked) {
             updatedTodos = updatedTodos.sort((a, b) =>
                 a.task.localeCompare(b.task)
