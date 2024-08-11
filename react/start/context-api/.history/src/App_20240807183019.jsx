@@ -1,0 +1,24 @@
+import { useState } from "react";
+import "./App.css";
+import { Header } from "./components/header/Header";
+import { UserBlock } from "./components/user-block/UserBlock";
+
+const getUserFromServer = () => ({
+  id: '001',
+  name: 'Eman',
+  age: 123,
+  phone: 987654321,
+  email: 'qwe@asd.zxc'
+})
+
+function App() {
+  const { name, age, id, phone, email } = getUserFromServer()
+    return (
+      <AppContext.Provider>
+
+      </AppContext.Provider>
+        
+    );
+}
+
+export default App;

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-// npm install -g json-server@0.17.4
+
 // npx json-server src/db.json запуск сервера
 // import { TodosList } from './components/todosList/TodosList'; ПЕРВОЕ ЗАДАНИЕ
 import {useRequestGetTodos, useRequestAddSomeTodo, useRequestUpdateTodo, useRequestDeleteTask} from './hooks/'

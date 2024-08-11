@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 // npm install -g json-server@0.17.4
 // npx json-server src/db.json запуск сервера
-// import { TodosList } from './components/todosList/TodosList'; ПЕРВОЕ ЗАДАНИЕ
+
 import {useRequestGetTodos, useRequestAddSomeTodo, useRequestUpdateTodo, useRequestDeleteTask} from './hooks/'
 import { Form } from './components/todo-app/forms/formAdd/Form';
 import { FormFind } from './components/todo-app/forms/formFind/FormFind';
 import { CheckboxSort } from './components/todo-app/CheckboxSort/CheckboxSort';
 import { TaskList } from './components/todo-app/taskList/TaskList';
+import { AppContext } from './context';
 import styles from './App.module.css';
 function App() {
 	const [input, setInput] = useState('');
@@ -37,7 +38,6 @@ function App() {
 	return (
 		<div className={styles.main}>
 			<h1>Do it !</h1>
-			{/* < TodosList /> первое задание */}
 			<div className={styles.container_app}>
 				<div className={styles.forms_container}>
 					<Form
