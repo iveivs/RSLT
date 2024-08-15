@@ -1,0 +1,26 @@
+import styles from "./Information.module.css";
+import { useEffect, useState } from 'react';
+import { store } from '../../store';
+export const InformationLayout = ({ state }) => {
+    const { currentPlayer, isDraw, isGameEnded } = state;
+    return (
+        //  Этот закомментированный вариант как-будто выглядит более понятно
+        // <div className={styles.info_container}>
+        //     {isDraw && <p>Ничья</p>}
+        //     {!isDraw && isGameEnded && <p className={styles.win}>Победа: {currentPlayer}</p>}
+        //     {!isDraw && !isGameEnded && <p className={styles.currentPlayer}>Сейчас ходит: {currentPlayer}</p>}
+        // </div>
+        
+        <div className={styles.info_container}> 
+            {isDraw ? (
+                <p>Ничья</p>
+            ) : isGameEnded ? (
+                <p className={styles.win}>Победа: {currentPlayer}</p>
+            ) : (
+                <p className={styles.currentPlayer}>
+                    Сейчас ходит: {currentPlayer}
+                </p>
+            )}
+        </div>
+    );
+};
