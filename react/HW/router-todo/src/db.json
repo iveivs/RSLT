@@ -2,7 +2,7 @@
   "todos": [
     {
       "task": "dsads",
-      "complited": "true",
+      "complited": true,
       "id": 1
     },
     {
@@ -17,18 +17,13 @@
     },
     {
       "task": "123",
-      "complited": "false",
+      "complited": "true",
       "id": 5
     },
     {
       "task": "asdfgh",
-      "complited": "false",
+      "complited": "true",
       "id": 6
-    },
-    {
-      "task": "qwerty",
-      "complited": "false",
-      "id": 7
     }
   ]
 }

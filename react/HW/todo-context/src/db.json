@@ -7,20 +7,22 @@
     },
     {
       "task": "Посмотреть урок",
+      "complited": "true",
       "id": 2
     },
     {
       "task": "new task",
-      "complited": "true",
+      "complited": "false",
       "id": 3
     },
     {
       "task": "абвгд",
+      "complited": "true",
       "id": 4
     },
     {
       "task": "some task",
-      "complited": "false",
+      "complited": "true",
       "id": 5
     },
     {
@@ -30,7 +32,7 @@
     },
     {
       "task": "новая задача",
-      "complited": "false",
+      "complited": "true",
       "id": 8
     }
   ]
