@@ -10,7 +10,7 @@ import styles from "./App.module.css";
 function App() {
     const [input, setInput] = useState("");
     const [isChecked, setIsChecked] = useState(false);
-    const [fiindImput, setFindInput] = useState("");
+    // const [fiindImput, setFindInput] = useState("");
     const [stateForTodos, setStateForTodos] = useState([]);
 
     const [refreshTodosFlag, setRefreshTodosFlag] = useState(false);
@@ -39,8 +39,8 @@ function App() {
                             setInput={setInput}
                         />
                         <FormFind
-                            fiindImput={fiindImput}
-                            setFindInput={setFindInput}
+                            // fiindImput={fiindImput}
+                            // setFindInput={setFindInput}
                         />
                     </div>
                     <div className={styles.task_list}>

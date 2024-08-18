@@ -25,6 +25,7 @@ function App() {
                 a.task.localeCompare(b.task)
             );
         }
+
         setStateForTodos(updatedTodos);
     }, [todos, isChecked]); 
 
@@ -37,6 +38,7 @@ function App() {
                         <Form
                             input={input}
                             setInput={setInput}
+                            
                         />
                         <FormFind
                             fiindImput={fiindImput}

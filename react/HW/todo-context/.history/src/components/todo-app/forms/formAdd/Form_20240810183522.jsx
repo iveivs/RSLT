@@ -1,15 +1,6 @@
-import { useContext } from 'react';
+import { useState } from 'react';
 import styles from './Form.module.css';
-import { useRequestAddSomeTodo } from "./../../../../hooks";
-import { AppContext } from '../../../../context';
-
-
-export const Form = ({ input, setInput }) => {
-	const { refreshTodos} = useContext(AppContext)
-	const { requestAddSomeTodo } = useRequestAddSomeTodo(
-        refreshTodos,
-        input
-    );
+export const Form = ({ input, setInput, requestAddSomeTodo }) => {
 	const handleChange = (e) => {
 		setInput(e.target.value);
 	};

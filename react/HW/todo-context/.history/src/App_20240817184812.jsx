@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
-import { useRequestGetTodos } from "./hooks/";
+import {
+    useRequestGetTodos,
+    useRequestAddSomeTodo,
+} from "./hooks/";
 import { Form } from "./components/todo-app/forms/formAdd/Form";
 import { FormFind } from "./components/todo-app/forms/formFind/FormFind";
 import { CheckboxSort } from "./components/todo-app/CheckboxSort/CheckboxSort";
@@ -25,8 +28,14 @@ function App() {
                 a.task.localeCompare(b.task)
             );
         }
+
         setStateForTodos(updatedTodos);
     }, [todos, isChecked]); 
+
+    const { isCreating, requestAddSomeTodo } = useRequestAddSomeTodo(
+        refreshTodos,
+        input
+    );
 
     return (
         <AppContext.Provider value={{stateForTodos, refreshTodos}}>
@@ -37,6 +46,7 @@ function App() {
                         <Form
                             input={input}
                             setInput={setInput}
+                            requestAddSomeTodo={requestAddSomeTodo}
                         />
                         <FormFind
                             fiindImput={fiindImput}

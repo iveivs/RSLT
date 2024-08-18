@@ -37,6 +37,7 @@ function App() {
                         <Form
                             input={input}
                             setInput={setInput}
+                            
                         />
                         <FormFind
                             fiindImput={fiindImput}

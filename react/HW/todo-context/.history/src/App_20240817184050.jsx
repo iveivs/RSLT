@@ -1,5 +1,10 @@
 import { useState, useEffect } from "react";
-import { useRequestGetTodos } from "./hooks/";
+import {
+    useRequestGetTodos,
+    useRequestAddSomeTodo,
+    useRequestUpdateTodo,
+    // useRequestDeleteTask,
+} from "./hooks/";
 import { Form } from "./components/todo-app/forms/formAdd/Form";
 import { FormFind } from "./components/todo-app/forms/formFind/FormFind";
 import { CheckboxSort } from "./components/todo-app/CheckboxSort/CheckboxSort";
@@ -20,16 +25,27 @@ function App() {
 
     useEffect(() => {
         let updatedTodos = [...todos];
+		// Сортировка
         if (isChecked) {
             updatedTodos = updatedTodos.sort((a, b) =>
                 a.task.localeCompare(b.task)
             );
         }
+
         setStateForTodos(updatedTodos);
-    }, [todos, isChecked]); 
+    }, [todos, isChecked]); // Обновляем список, когда меняются `todos` или `isChecked`
+
+    const { isCreating, requestAddSomeTodo } = useRequestAddSomeTodo(
+        refreshTodos,
+        input
+    );
+
+    // const { isDeleting, requestDeleteTask } = useRequestDeleteTask(refreshTodos);
+
+    const { requestUpdateTodo } = useRequestUpdateTodo(refreshTodos);
 
     return (
-        <AppContext.Provider value={{stateForTodos, refreshTodos}}>
+        <AppContext.Provider value={stateForTodos refreshTodos}>
             <div className={styles.main}>
                 <h1>Do it !</h1>
                 <div className={styles.container_app}>
@@ -37,6 +53,7 @@ function App() {
                         <Form
                             input={input}
                             setInput={setInput}
+                            requestAddSomeTodo={requestAddSomeTodo}
                         />
                         <FormFind
                             fiindImput={fiindImput}
@@ -50,6 +67,7 @@ function App() {
                         />
                         <TaskList
                             isLoading={isLoading}
+                            requestUpdateTodo={requestUpdateTodo}
                             fiindImput={fiindImput}
                         />
                     </div>
