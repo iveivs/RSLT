@@ -1,0 +1,1 @@
+export const selectIs = (state) => state.currentPlayer
