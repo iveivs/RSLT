@@ -1,0 +1,32 @@
+{
+  "todos": [
+    {
+      "task": "сходить в магазин",
+      "completed": false,
+      "id": 1,
+      "complited": true
+    },
+    {
+      "task": "почитать книгу",
+      "completed": false,
+      "id": 2,
+      "complited": false
+    },
+    {
+      "task": "сделать домашку",
+      "completed": false,
+      "id": 3
+    },
+    {
+      "task": "убраться в комнате",
+      "completed": false,
+      "id": 4
+    },
+    {
+      "task": "спорт",
+      "completed": false,
+      "id": 5,
+      "complited": true
+    }
+  ]
+}
