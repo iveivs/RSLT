@@ -1,0 +1,32 @@
+
+.container {
+	margin: 0 auto	;
+	height: 300px;
+	width: 300px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.fieldItem {
+	height: 98px;
+	width: 98px;
+	background-color: #303030;
+}
+.fieldItem:hover {
+	background-color: #424242;
+	cursor: pointer;
+}
+.fieldItem {
+	border: 1px solid red;
+	text-align: center;
+	padding-top: 24px;
+	font-size: 32px;
+	line-height: none;
+}
+.cover_btn {
+	text-align: center;
+}
+.restartGameBtn{
+	color: rgba(255, 255, 255, 0.87);
+	text-align: center;
+}
