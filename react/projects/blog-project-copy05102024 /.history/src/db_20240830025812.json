@@ -1,0 +1,11 @@
+{
+    "users": [
+        {
+            "id": "001",
+            "login": "Asterix",
+            "password": "qwerty123",
+            "regestred_at": "2050-02-",
+            "role_id": "123"
+        }
+    ]
+}

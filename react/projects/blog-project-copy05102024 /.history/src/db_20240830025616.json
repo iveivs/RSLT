@@ -1,0 +1,10 @@
+{
+    "users": [
+        {
+            id
+            login
+            password
+            regestred_at / role_id
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+export const user = (loginTo) => users.find(({ login }) => login === authLogin)

@@ -1,0 +1,16 @@
+@import url('fonts/font-awesome.css'); /* в уроке прописали это, вместо lknk в html(хотя и так всё нормально работало) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #405060;
+    
+}
+
+html, body, #root {
+    height: 100%;
+}
