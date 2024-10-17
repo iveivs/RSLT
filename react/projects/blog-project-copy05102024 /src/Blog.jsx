@@ -1,10 +1,11 @@
-import { Route, Routes } from 'react-router-dom'
-import { Header, Footer, Modal } from './components'
+import { useLayoutEffect } from 'react'
 import { useDispatch } from 'react-redux'
+import { Route, Routes } from 'react-router-dom'
+import {  Error, Header, Footer, Modal } from './components'
+import { ERROR } from './constants'
 import { setUser } from './actions'
 import { Authorization, Main, Registration, Users, Post } from './pages'
 import styled from 'styled-components'
-import { useLayoutEffect } from 'react'
 
 // npx json-server src/db.json запуск сервера
 
@@ -51,7 +52,7 @@ function Blog() {
           <Route path='/post' element={< Post/>} />
           <Route path='/post/:id' element={<Post />} />
           <Route path='/post/:id/edit' element={<Post  />} />
-          <Route path='*' element={<div>Ошибка</div>} />
+          <Route path='*' element={< Error error={ERROR.PAGE_NOT_EXIST} />} />
         </Routes>
       </Page>
       <Footer />

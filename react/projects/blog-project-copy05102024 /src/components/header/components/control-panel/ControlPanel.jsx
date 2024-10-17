@@ -9,19 +9,19 @@ import { Icon, Button } from "../../../../components";
 import styled from "styled-components";
 import { ROLE } from "../../../../constants";
 import { logout } from "../../../../actions";
+import { checkAccess } from "../../../../utils";
 
 const RightAligned = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
 `;
 
 const UserName = styled.div`
     font-size: 18px;
     font-weight: bold;
     color: #222;
-`
+`;
 const controlPanelContainer = ({ className }) => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
@@ -30,9 +30,11 @@ const controlPanelContainer = ({ className }) => {
     const login = useSelector(selectUserLogin);
 
     const onLogout = () => {
-        dispatch(logout(session))
-        sessionStorage.removeItem('userData')
-    }
+        dispatch(logout(session));
+        sessionStorage.removeItem("userData");
+    };
+
+    const isAdmin = checkAccess([ROLE.ADMIN], roleId);
 
     return (
         <div className={className}>
@@ -44,20 +46,30 @@ const controlPanelContainer = ({ className }) => {
                 ) : (
                     <>
                         <UserName>{login}</UserName>
-                        <Icon id="fa-sign-out" margin="0 0 0 10px" onClick={onLogout}/>
-                        
+                        <Icon
+                            id="fa-sign-out"
+                            margin="0 0 0 10px"
+                            onClick={onLogout}
+                        />
                     </>
                 )}
-                
             </RightAligned>
             <RightAligned>
-                <Icon onClick={() => navigate(-1)} id="fa-backward" margin="10px 0 0 0" />
-                <Link to="/post">
-                    <Icon id="fa-file-text-o" margin="10px 0 0 16px" />
-                </Link>
-                <Link to="/users">
-                    <Icon id="fa-users" margin="10px 0 0 16px" />
-                </Link>
+                <Icon
+                    onClick={() => navigate(-1)}
+                    id="fa-backward"
+                    margin="10px 0 0 0"
+                />
+                {isAdmin && (
+                    <>
+                        <Link to="/post">
+                            <Icon id="fa-file-text-o" margin="10px 0 0 16px" />
+                        </Link>
+                        <Link to="/users">
+                            <Icon id="fa-users" margin="10px 0 0 16px" />
+                        </Link>
+                    </>
+                )}
             </RightAligned>
         </div>
     );

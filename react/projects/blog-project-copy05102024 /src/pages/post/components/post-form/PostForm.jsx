@@ -1,3 +1,4 @@
+// import PropTypes from 'prop-types'
 import { styled } from "styled-components";
 import { Input, Icon } from "../../../../components";
 import { useDispatch } from "react-redux";
@@ -7,6 +8,7 @@ import { SpecialPanel } from "../special-panel/SpecialPanel";
 import { sanitizeContent } from "./utils";
 import { useServerRequest } from "../../../../hooks";
 import { useState, useLayoutEffect, useRef } from "react";
+import { PROP_TYPE } from '../../../../constants'
 
 const PostFormContainer = ({
     className,
@@ -18,8 +20,6 @@ const PostFormContainer = ({
     const navigate = useNavigate()
     const requestServer = useServerRequest()
 
-    // const imageRef = useRef(null);
-    // const titleRef = useRef(null);
     const contentRef = useRef(null);
 
     useLayoutEffect(() => {
@@ -29,16 +29,12 @@ const PostFormContainer = ({
     }, [imageUrl, title])
 
     const onSave = () => {
-        // const newImageUrl = imageRef.current.value; // рефы для НЕконтролируемых инпутов
-        // const newTitle = titleRef.current.value; // рефы для НЕконтролируемых инпутов
         const newContent = sanitizeContent(contentRef.current.innerHTML);
 
         dispatch(
             savePostAsync( requestServer, {
                 id,
-                // imageUrl: newImageUrl,
                 imageUrl: imageUrlValue,
-                // title: newTitle,
                 title: titleValue,
                 content: newContent,
             }),
@@ -51,15 +47,11 @@ const PostFormContainer = ({
     return (
         <div className={className}>
             <Input
-                // ref={imageRef}
-                // defaultValue={imageUrl}
                 value={imageUrlValue}
                 placeholder="Изображение..."
                 onChange={onImageChange}
             />
             <Input
-                // ref={titleRef}
-                // defaultValue={title}
                 value={titleValue}
                 placeholder="Заголовок"
                 onChange={onTitleChange}
@@ -72,7 +64,7 @@ const PostFormContainer = ({
                     <Icon
                         id="fa-floppy-o"
                         size="21px"
-                        
+                        margin="0 10px 0 0 "
                         onClick={onSave}
                     />
                 }
@@ -103,3 +95,7 @@ export const PostForm = styled(PostFormContainer)`
         white-space: pre-line;
     }
 `;
+
+PostForm.propTypes = {
+    post: PROP_TYPE.POST.isRequired,
+}

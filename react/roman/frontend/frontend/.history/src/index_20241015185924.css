@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --fs: 16px;
+  --font: Arial;
+  --bg: #fff;
+  --color-text: #333;
+  --color-text-more: rgba(0,0,0, 0.4)
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+    font-family: var(--font);
+    font-size: var(--fs);
+    background-color: var(--bg);
+    col
+}
+
+.indent{
+  padding-top: 50px;
+}

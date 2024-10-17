@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --fs: 16px;
+  --font: Arial;
+  --bg: #fff;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+    font-family: var(--font);
+    font-size: var(--fs);
+    background-color: var
+}
+
+.indent{
+  padding-top: 50px;
+}

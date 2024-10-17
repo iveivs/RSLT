@@ -1,0 +1,3 @@
+function addNotes() {}
+
+function getNote() {}

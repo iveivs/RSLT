@@ -1,7 +1,9 @@
+// import PropTypes from 'prop-types'
 import { styled } from "styled-components";
 import { H2, Icon } from "../../../../components";
 import { useNavigate } from "react-router-dom";
 import { SpecialPanel } from "../special-panel/SpecialPanel";
+import { PROP_TYPE } from '../../../../constants'
 
 const PostContentContainer = ({
     className,
@@ -42,3 +44,7 @@ export const PostContent = styled(PostContentContainer)`
         white-space: pre-line;
     }
 `;
+
+PostContent.propTypes = {
+    post: PROP_TYPE.POST.isRequired,
+}

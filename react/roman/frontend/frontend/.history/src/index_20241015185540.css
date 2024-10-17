@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --fs: 16px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.indent{
+  padding-top: 50px;
+}
