@@ -1,0 +1,3 @@
+function dataIsArray() {
+    return Arr
+}

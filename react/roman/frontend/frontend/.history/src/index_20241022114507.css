@@ -1,0 +1,146 @@
+
+:root {
+  --fs: 16px;
+  --font: Nunito;
+  --bg: #fff;
+  --color-text: #333;
+  --color-text-more: rgba(0,0,0, 0.4);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  font-size: var(--fs);
+  background-color: var(--bg);
+  color: var(--color-text);
+  line-height: 1.4;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--color-text-more);
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.indent {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.col-3, .col-4, .col-6 {
+  margin: 15px;
+}
+.col-3 {
+  width: calc(33.33333% - 30px);
+}
+.col-4 {
+  width: calc(25% - 30px);
+}
+.col-6 {
+  width: calc(50% - 30px);
+}
+.header {
+  align-items: center;
+}
+
+.logo-img {
+  width: 50px;
+}
+
+.header_options {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  gap: 10px;
+}
+.header_options i {
+  margin-left: 20px;
+  font-size: 24px;
+}
+
+.menu_items {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+}
+.menu_items a:hover {
+  color: rgb(236, 67, 0);
+}
+
+.menu_item_link {
+  font-weight: 600;
+}
+
+.underline-effect {
+  position: relative;
+  display: inline-block; 
+  cursor: pointer;
+}
+
+.underline-effect::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: rgb(236, 67, 0); 
+  transition: width 0.4s ease-out; 
+}
+
+.underline-effect:hover::after {
+  width: 100%; 
+}
+
+/* .cart  {
+  border: 1px solid #ccc;
+  text-align: center;
+} */
+.cart i {
+  width: 45px;
+  height: 45px;
+  padding-top: 9px;
+  border-radius: 6px;
+  box-shadow: 5px 5px 12px 2px #F5F5F5;
+  text-align: center;
+}
+.account i {
+  width: 45px;
+  height: 45px;
+  padding-top: 9px;
+  border-radius: 6px;
+  border-radius: 6px;
+  box-shadow: 5px 5px 10px 2px #F5F5F5
+  box-shadow: -5px 5px 10px 2px #F5F5F5;
+  text-align: center;
+}
+
