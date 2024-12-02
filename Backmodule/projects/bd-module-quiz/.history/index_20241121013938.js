@@ -1,0 +1,2 @@
+const = greati
+console.log();

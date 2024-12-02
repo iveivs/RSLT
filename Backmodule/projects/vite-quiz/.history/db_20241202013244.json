@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Что выведет консоль: console.log(typeof null)?",
+            "options": ["object", "null", "undefined", "number"],
+            "correctAnswer": "object"
+        },
+        {
+            "id": 2,
+            "question": "Какой метод используется для добавления элементов в конец массива?",
+            "options": ["push", "pop", "shift", "unshift"],
+            "correctAnswer": "push"
+        },
+        {
+            "id": 3,
+            "question": "Что делает оператор '===' в JavaScript?",
+            "options": [
+                "Сравнивает значения и типы данных",
+                "Сравнивает только значения",
+                "Преобразует типы данных перед сравнением",
+                "Сравнивает переменные с разными типами"
+            ],
+            "correctAnswer": "Сравнивает значения и типы данных"
+        },
+        {
+            "id": 4,
+            "question": "Какой результат выполнения: Boolean('')?",
+            "options": ["true", "false", "undefined", "null"],
+            "correctAnswer": "false"
+        },
+        {
+            "id": 5,
+            "question": "Какой из перечисленных методов создает новый массив?",
+            "options": ["forEach", "map", "reduce", "filter"],
+            "correctAnswer": "map"
+        },
+        {
+            "id": 6,
+            "question": "Что такое 'hoisting' в JavaScript?",
+            "options": [
+                "Процесс перемещения функций и переменных в начало их области видимости",
+                "Вызов функции перед ее определением",
+                "Сравнение типов переменных",
+                "Объявление переменной с использованием const"
+            ],
+            "correctAnswer": "Процесс перемещения функций и переменных в начало их области видимости"
+        },
+        {
+            "id": 7,
+            "question": "Что делает метод Array.prototype.reduce?",
+            "options": [
+                "Добавляет элементы в конец массива",
+                "Перебирает массив, возвращая новый массив",
+                "Обрабатывает массив, возвращая одно значение",
+                "Удаляет последний элемент из массива"
+            ],
+            "correctAnswer": "Обрабатывает массив, возвращая одно значение"
+        },
+        {
+            "id": 8,
+            "question": "Какое значение вернет выражение: !!null?",
+            "options": ["true", "false", "null", "undefined"],
+            "correctAnswer": "false"
+        },
+        {
+            "id": 9,
+            "question": "Какие типы данных есть в JavaScript?",
+            "options": [
+                "String, Number, Boolean, Object, Undefined, Null, Symbol, BigInt",
+                "String, Integer, Boolean, Object, Undefined, Null",
+                "Text, Number, Boolean, Array, Undefined",
+                "Number, Boolean, String, Symbol, Date"
+            ],
+            "correctAnswer": "String, Number, Boolean, Object, Undefined, Null, Symbol, BigInt"
+        },
+        {
+            "id": 10,
+            "question": "Какой результат выполнения: console.log([] + [])?",
+            "options": ["''", "[]", "undefined", "null"],
+            "correctAnswer": "''"
+        }
+    ]
+}

@@ -1,0 +1,2 @@
+const = greatig
+console.log();
