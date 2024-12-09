@@ -1,0 +1,1 @@
+export const selectCurrentQuestion = (state) => state.quiz.currentQuestion;

@@ -1,0 +1,1 @@
+export const selectErro = (state) => state.quiz.error;

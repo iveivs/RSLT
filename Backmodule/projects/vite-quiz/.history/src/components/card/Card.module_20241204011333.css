@@ -1,0 +1,39 @@
+.wrapper {
+    padding: 2rem;
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Центрирование текста */
+}
+
+.question {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выровнять текст и кружочки по левому краю */
+    margin: 0 auto; /* Центрирование всего блока */
+    gap: 0.8rem;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.option input {
+    width: 1.2rem;
+    height: 1.2rem;
+    accent-color: #646cff; /* Цвет для радиокнопок */
+}
+
+.btn_slider_box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
